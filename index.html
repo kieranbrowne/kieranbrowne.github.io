@@ -1,0 +1,48 @@
+---
+layout: default
+description: Artist from Canberra Australia
+classes: front-page
+---
+
+<div class="canvas-crop">
+  <canvas id="canvas" width="800" height="800" style="transform: scale(2.05)"></canvas>
+</div>
+
+<!-- <div class="block h-100vh grey"> -->
+<!--   <div class="grid posts"> -->
+<!--     <div class="col-1"></div> -->
+<!--     <div class="col-4"> -->
+<!--       <span class="big color-highlight serif"> -->
+<!--         <h1>Header</h1> -->
+<!--         <span> -->
+<!--           is a multi-diciplinary artist and researcher based in Canberra, Australia. -->
+<!--         </span> -->
+<!--       </span> -->
+<!--     </div> -->
+<!--     <div class="col-8"> -->
+<!--     </div> -->
+<!--   </div> -->
+<!-- </div> -->
+
+<script>
+
+  function scaleCanvas(e) {
+    console.log(jQuery(window).innerWidth());
+    jQuery('canvas').css("transform",
+        "scale("+(.5+($(window).width()/1280)*1.5)+")"
+        +" translate("+($(window).width()/2 - e.pageX)/60+"px,"+e.pageY/80+"px)"
+        );
+    /*jQuery('canvas').css("max-height",
+        120/(.5+($(window).width()/1280)*1.5)+"vh"
+        );*/
+  }
+
+  jQuery(window).load(function(e){scaleCanvas(e)});
+  jQuery(window).resize(function(e){scaleCanvas(e)});
+
+  jQuery(window).mousemove(function(e){scaleCanvas(e)});
+
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.1/lodash.min.js"></script>
+<script src="script/drawing.js"></script>

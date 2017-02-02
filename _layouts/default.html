@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }}{% if page.description %} - {{ page.description }}{% endif %}</title>
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <!-- <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'> -->
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/script/main.js"></script>
+
+  </head>
+
+  <body class="{{page.background}} {{page.layout}} {{page.classes}}">
+
+    <header>
+      <div class="grid">
+        <div class="col-4 col-sm-6">
+          <a href="/"><h1 class="site-title">Kieran Browne</h1></a>
+        </div>
+        <div class="col-8 col-sm-6 nav">
+          <!-- <a href="/work">Gallery</a> -->
+          <a href="/research">Research</a>
+          <a href="/bio">Bio</a>
+        </div>
+      </div>
+    </header>
+
+    <div id="main" role="main">
+      <div class="baselinegrid">
+        {% for i in (1..200) %}
+          <div class="line"></div>
+        {% endfor %}
+      </div>
+      <div class="displaygrid">
+        <div class="grid">
+          {% for i in (1..12) %}
+            <div class="col-1"></div>
+          {% endfor %}
+        </div>
+      </div>
+      {{ content }}
+    </div>
+
+    <footer>
+      <div class="grid">
+        <div class="col-3 col-sm-6">
+          <a href="//braindump.kieranbrowne.com">Brain Dump</a><br>
+          <a href="//www.github.com/kierantbrowne">Github</a><br>
+          <!-- <a href="/cv/">CV</a><br> -->
+        </div>
+        <div class="col-3 col-sm-6">
+          <a href="//www.instagram.com/kierantbrowne">Instagram</a><br>
+          <a href="//twitter.com/kierantbrowne">Twitter</a>
+        </div>
+        <div class="col-3 col-sm-6">
+        </div>
+        <div class="col-3 col-sm-6 talr mono version-number">
+          v2.0.0
+        </div>
+      </div>
+    </footer>
+
+    {% include analytics.html %}
+  </body>
+</html>

@@ -1,0 +1,168 @@
+@mixin baseline(
+  $font-size: 14px,
+  $baseline: 20px,
+  $first-baseline: $baseline,
+  $after: 0,
+  $ratio: 1.8 // cap height : descender
+) {
+
+  $shift: (($ratio / 8) * $font-size);
+  $shift: $shift + (($baseline - $font-size) / 2);
+
+  box-sizing: content-box;
+
+  font-size: $font-size;
+  line-height: $baseline;
+  margin-top: ($first-baseline - $baseline + $shift);
+  $aftern: ($after - $shift);
+  @if $aftern < 0 {
+    margin-bottom: $aftern;
+    padding-bottom: 0;
+  } @else {
+    padding-bottom: $aftern;
+    margin-bottom: 0;
+  }
+}
+
+
+// defaults
+%proto-span {
+  box-sizing: border-box;
+}
+
+%proto-grid {
+  box-sizing: border-box;
+  display: block;
+  font-size: 0;
+  margin: 0 auto;
+  &:after {
+    clear: both;
+    display:  block;
+    content: ' ';
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+%proto-row {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+
+  [class^=span-]:last-of-type {
+    margin-right: 0;
+  }
+}
+
+// grid
+@mixin gen-grid($col:12,$gut:30px,$cont:100%,$namespace:'') {
+  .grid#{$namespace} {
+    max-width: #{$cont};
+    width: 100%;
+    @extend %proto-grid;
+    
+    %gutter {
+    }
+    %gut-right {
+      margin-right: $gut;
+    }
+   
+    @for $i from 0 through $col {
+      @include gen-col($col,$gut,$i);
+    }
+
+    @media screen and (max-width: 800px) {
+      @for $i from 0 through $col {
+        @include gen-col($col,$gut,$i,'sm-');
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      @for $i from 0 through $col {
+        @include gen-col($col,$gut,$i,'xs-');
+      }
+    }
+
+    .row {
+      @extend %proto-row;
+    }
+  }
+}
+
+@mixin gen-col($col,$gut,$num:1,$break:'') {
+  .col-#{$break}#{$num} {
+    $val:100% / $col * $num + 0%;
+    $timzah: 1 + ($num / $col);
+    width: calc(#{$val} - #{$gut*$timzah});
+
+    // gutter
+    margin-left: $gut;
+
+    // prototype
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+
+    // off option
+    @if $num == 0 {
+      display: none;
+    }
+  }
+}
+
+// make grid visible for dev
+.show-grid {
+  .displaygrid {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    pointer-events: none;
+    .grid {
+      border-left: 1px dashed #f0f;
+      border-right: 1px dashed #f0f;
+      // position: static;
+    }
+    [class*=col-] {
+      height: 1000px;
+      &:nth-of-type(2n) {
+        border-right: 1px dashed rgba(0,0,0,0.4);
+        border-left: 1px dashed rgba(0,0,0,0.1);
+      }
+      &:nth-of-type(2n+1) {
+        border-right: 1px dashed rgba(0,0,0,0.1);
+        border-left: 1px dashed rgba(0,0,0,0.4);
+      }
+    }
+  }
+}
+
+body:not(.show-grid) {
+  .displaygrid {
+    display: none;
+  }
+}
+.show-baseline {
+  .baselinegrid {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    z-index: 1;
+    pointer-events: none;
+    // height: 100%;
+
+    .line {
+      border-bottom: 1px dashed #aaa;
+      height: 1.2rem;
+      box-sizing: border-box;
+    }
+  }
+}
+
+body:not(.show-baseline) {
+  .baselinegrid {
+    display: none;
+  }
+}

@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="grid flex-column-reverse-sm">
+
+
+  <div class="post col-3 col-sm-12">
+    <p class="sans-serif">
+      Kieran Browne<br>
+      <span class="grey-text"> {{ page.date | date: "%B %e, %Y" }} </span>
+    </p>
+    {% if page.kurzgesagt != null %}
+      <h4 id="kurzgesagt" title="My research in summary." style="cursor: help;"><em>Kurzgesagt</em> &mdash; 
+        {{ page.kurzgesagt }}</h4>
+    {% endif %}
+    <p class="sans-serif bold">
+      Share:
+      <a href="https://twitter.com/home?status={{page.title}}%20-%20http://kieranbrowne.com{{page.url}}"><i class="fa fa-twitter"></i></a>
+    </p>
+
+  </div>
+
+  <article class="post col-8 col-sm-12">
+    
+    <div class="main content">
+      <h1>{{ page.title }}</h1>
+      {{ content }}
+    </div>
+    <div class="spacer"></div>
+    <p>
+      <a href="{{site.url}}/research">&larr; Back to Posts</a>
+    </p>
+    {% include disqus.html %}
+  </article>
+
+</div>
+

@@ -1,0 +1,288 @@
+---
+---
+
+// @import "reset";
+@import "variables";
+@import "solar";
+
+
+
+$white: darken(rgb(252,252,250),3%);
+$white: white;
+$dark-grey: rgb(0,0,15);
+$body-font: 'Vollkorn', Georgia, serif;
+// $bodyFont: $helvetica;
+$mono-font: 'PT Mono', sans-serif;
+$ultra-blue: #5F64F5;
+$highlight: $ultra-blue;
+$border: $highlight;
+$header-height: 3rem;
+
+
+$phi: 1.618;
+
+:root {
+  font-size: calc(.6em + 1vw);
+}
+
+
+$gutter:1.2rem;
+$baseline: 1.2rem;
+
+@include gen-grid(12,$gutter,100%);
+
+body {
+  background: $white;
+  font-family: $body-font;
+  color: $darkGray;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+// BASIC STYLES
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $helveticaNeue;
+  font-weight: 700;
+  // color: #999;
+}
+
+ul, p {
+  @include baseline($baseline*.75,$baseline,$baseline*2);
+  color: darken(rgb(80,80,100),0%);
+
+}
+
+p img {
+  max-width: 100%;
+}
+
+blockquote > p {
+  color: #999;
+}
+
+.avatar {
+  width: 60%;
+  max-width: 200px;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto;
+  
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    &:before {
+      content: "•";
+      padding-right: .6rem;
+    }
+
+  }
+}
+
+h1 {
+  @include baseline($baseline*1.8,$baseline*2,$baseline*2);
+  letter-spacing: -.9px;
+}
+
+h2 {
+  @include baseline($baseline*1,$baseline,$baseline*2.5);
+  color: $highlight;
+}
+
+h4 {
+  @include baseline($baseline*.6,$baseline,$baseline*2);
+  color: #999;
+  font-weight: 400;
+}
+
+a {
+
+  color: $highlight;
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+
+  // fancy border swipe 
+  &:before, &:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid $highlight;
+    content: '';
+    transition: all .3s;
+    transform: scale(0,1);
+    left: 0;
+    transform-origin: left center;
+  }
+
+  &:before {
+  }
+
+  &:after {
+    border-bottom: 3px solid $white;
+  }
+
+  &:hover {
+
+    &:before {
+      transform: scale(1,1);
+    }
+    &:after {
+      transform: scale(1,1);
+      transition-delay:.2s;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  :root {
+    font-size: calc(.9em + 1vw);
+  }
+}
+
+header {
+  height: $header-height;
+  border-bottom: 1px solid $border;
+  position: fixed;
+  width: 100%;
+  background: $white;
+  z-index: 1;
+}
+
+canvas {
+  transition: transform 2.8s ease-out;
+  position: absolute;
+}
+
+.front-page footer {
+  margin-top: 0;
+}
+
+footer {
+  margin-top: $header-height;
+  padding-bottom: 1rem;
+
+  border-top: 1px solid $border;
+
+  [class*=col-] {
+    @include baseline($baseline*.75,$baseline,$baseline*2);
+  }
+
+  .version-number {
+    @include baseline($baseline*.65,$baseline,$baseline*2);
+    color: #999;
+  }
+}
+
+.front-page #main  {
+  padding-top: 0;
+}
+.post #main {
+  padding-top: $header-height*2;
+}
+.page #main {
+  padding-top: $header-height;
+}
+
+.nav {
+  @include baseline($baseline*.75,$baseline,$baseline*2);
+  text-align: right;
+  a {
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+}
+
+.site-title {
+  @include baseline($baseline,$baseline,$baseline*2);
+  color: $highlight;
+}
+
+.canvas-crop {
+  // height: 100%;
+  overflow: hidden;
+  border: 1px solid transparent;
+  position: relative;
+  height: 100vh;
+  // padding-top: $header-height;
+}
+
+.post.preview {
+  h2 {
+    @include baseline($baseline*.8,$baseline,$baseline);
+  }
+  .excerpt {
+    @include baseline($baseline*.7,$baseline,$baseline);
+    font-family: $helveticaNeue;;
+  }
+  .number {
+    font-family: $mono-font;
+    @include baseline($baseline*.6,$baseline,$baseline*3);
+  }
+}
+
+// micro-classes
+.mono {
+  font-family: $mono-font;
+}
+
+.sans-serif {
+  font-family: $helveticaNeue;
+}
+
+.grey-text {
+  color: #aab;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.talr {
+  text-align: right;
+}
+
+.talc {
+  text-align: center;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.pt3r {
+  padding-top: 3rem;
+}
+
+@media (max-width: 800px) {
+  .flex-column-reverse-sm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: $white;
+    background: $dark-grey;
+}
+
+::selection {
+    color: $white; 
+    background: $dark-grey;
+}
