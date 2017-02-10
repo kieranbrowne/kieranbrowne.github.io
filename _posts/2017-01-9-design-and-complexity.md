@@ -37,13 +37,17 @@ The other common solution for interactions with machine learning  is training by
 ![Simplistic sketch of Dieter Rams](/images/dieter-rams.jpg)
 
 So, are we making good design? 
-We’ve concealed the complexity of neural nets that’s for sure. And we get the functionality and power of machine learning without any unsightly neurons and synapses. But, at the risk of overstretching my analogy, what we’ve ended up with is a radio without any controls.
+We’ve concealed the complexity of neural nets that’s for sure. And we get the functionality and power of machine learning without any unsightly neurons and synapses. But, at the risk of overstretching my analogy, what remains is a radio without any controls.
 
 *Good design makes a product understandable.* By exposing nothing of the neural net to the user we render it a ghost of the system. We see effects and may attribute these to a network or some action we took but cannot pin it down or reason about it.
 
 *Good design makes a product useful.* It’s clear that neural nets can be useful whether the end user can directly manipulate them or not. But when a user can neither understand nor manipulate the system with which they interact, are they really using or simply receiving it?
 
 ## Reading List
-- Kulesza, Todd, Weng-Keen Wong, Simone Stumpf, Stephen Perona, Rachel White, Margaret M. Burnett, Ian Oberst, and Andrew J. Ko. "Fixing the program my computer learned: Barriers for end users, challenges for the machine." In Proceedings of the 14th international conference on Intelligent user interfaces, pp. 187-196. ACM, 2009.
-- [Nielsen, Michael A. "Neural networks and deep learning." Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html)
 - [Campbell-Dollaghan, Kelsey. "Skeuomorphism Will Never Go Away, And That's a Good Thing". Gizmodo](http://gizmodo.com/skeuomorphism-will-never-go-away-and-thats-a-good-thin-1642089313)
+- ["Gilles Deleuze." Stanford Encyclopedia of Philosophy. (Accessed 10 Feb 2017)](https://plato.stanford.edu/entries/deleuze/)
+- [Hui, Yuk. "The Plane of Obscurity — Simulation and Philosophy." Computational Culture 1, no. 1 (2011)](http://computationalculture.net/review/the-plane-of-obscurity-%E2%80%94-simulation-and-philosophy)
+- Kulesza, Todd, Weng-Keen Wong, Simone Stumpf, Stephen Perona, Rachel White, Margaret M. Burnett, Ian Oberst, and Andrew J. Ko. "Fixing the program my computer learned: Barriers for end users, challenges for the machine." In Proceedings of the 14th international conference on Intelligent user interfaces, pp. 187-196. ACM, 2009.
+- [Lippert, Ingmar. "Extended carbon cognition as a machine." Computational Culture 1, no. 1 (2011): 1-15.](http://computationalculture.net/article/extended-carbon-cognition)
+- [Nielsen, Michael A. "Neural networks and deep learning." Chapter 1](http://neuralnetworksanddeeplearning.com/chap1.html)
+- [Parisi, Luciana, and Stamatia Portanova. "Soft thought (in architecture and choreography)." Computational Culture, no .1 (2011).](http://computationalculture.net/article/soft-thought)
