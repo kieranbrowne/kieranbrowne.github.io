@@ -104,9 +104,17 @@ h2 {
   color: $highlight;
 }
 
+h3 {
+  @include baseline($baseline*.8,$baseline,$baseline*2);
+}
+
 h4 {
-  @include baseline($baseline*.6,$baseline,$baseline*2);
+  @include baseline($baseline*.65,$baseline,$baseline*2);
   color: #999;
+}
+
+#kurzgesagt {
+  @include baseline($baseline*.6,$baseline,$baseline*1.5);
   font-weight: 400;
 }
 

@@ -10,9 +10,8 @@ permalink: /research/
 
       <a href="{{ site.baseurl }}{{ post.url }}">
         <p class="number mono"> {% if forloop.rindex0 < 10 %}0{% endif %}{{ forloop.rindex0 }}</p>
-        <h2>
-          {{ post.title }}
-        </h2>
+
+        <h2> {{ post.title }} </h2>
 
         <div class="excerpt">
           {% capture var %}{{ post.excerpt | slice: 0,130 | strip_html }}...{% endcapture%}
