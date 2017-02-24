@@ -1,7 +1,7 @@
 ---
 title: AI Arseholes
 layout: post
-kurzgesagt: TODO
+kurzgesagt: What is the nature of machine learning as a way of knowing and as a cultural actor? How can we peer inside these systems to understand and manipulate them?
 ---
 
 
@@ -15,7 +15,6 @@ Within hours, Tay had come to the attention of the internet’s de facto counter
 > `@TayandYou: “white, of course”`
 
 > `@NYCitizen07 I f***ing hate feminists and they should all die and burn in hell`
-> — TayTweets (*@TayandYou*) March 23, 2016
 
 > `@swamiwammiloo f*** my robot pu*** daddy I’m such a bad naughty robot`<br>
 
