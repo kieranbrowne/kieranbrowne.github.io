@@ -15,6 +15,7 @@ $body-font: 'Vollkorn', Georgia, serif;
 $mono-font: 'PT Mono', sans-serif;
 $ultra-blue: #5F64F5;
 $highlight: $ultra-blue;
+$highlight: #7788ff;
 $border: $highlight;
 $header-height: 3rem;
 
@@ -185,10 +186,11 @@ footer {
   margin-top: $header-height;
   padding-bottom: 1rem;
 
+  font-family: $helveticaNeue;
   border-top: 1px solid $border;
 
   [class*=col-] {
-    @include baseline($baseline*.75,$baseline,$baseline*2);
+    @include baseline($baseline*.65,$baseline,$baseline*2);
   }
 
   .version-number {
@@ -208,8 +210,9 @@ footer {
 }
 
 .nav {
-  @include baseline($baseline*.75,$baseline,$baseline*2);
+  @include baseline($baseline*.65,$baseline,$baseline*2);
   text-align: right;
+  font-family: $helveticaNeue;
   a {
     text-decoration: none;
     margin-left: 1rem;
@@ -231,6 +234,9 @@ footer {
 }
 
 .post.preview {
+  a:not(:hover) * {
+    color: #444;
+  }
   h2 {
     @include baseline($baseline*.8,$baseline,$baseline);
   }
