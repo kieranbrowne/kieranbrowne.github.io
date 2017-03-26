@@ -12,14 +12,14 @@ description: visual artist from Canberra, Australia
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
-disqus:
+disqus: kieranbrowne
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: true
+google_analytics: "UA-96180072-1"
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-    url: "http://kieranbrowne.com"
+url: "http://kieranbrowne.com"
 
 #
 # !! You don't need to change any of the configuration flags below !!
