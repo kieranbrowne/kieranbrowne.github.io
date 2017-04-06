@@ -54,6 +54,33 @@ ul, p {
   color: darken(rgb(80,80,100),0%);
 }
 
+table {
+  @include baseline($baseline*.7,$baseline,$baseline*2);
+  font-family: sans-serif;
+  border-collapse: collapse;
+  // border-collapse: separate;
+
+  tbody ,
+  thead {
+  box-sizing: content-box;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    padding: 1rem 0;
+    padding: 2rem 0;
+  }
+  tr {
+    line-height: 1rem;
+    vertical-align: top;
+    th , td {
+    padding: 0.5rem 0;
+      padding-right: 1.4rem;
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
 .highlight code {
   display: block;
   padding-top: 1rem;
@@ -61,6 +88,7 @@ ul, p {
   padding-left: 1rem;
   white-space: pre-wrap;
 }
+
 code {
   @include baseline($baseline*.60,$baseline,$baseline*2);
   background: #f2f2f2;
