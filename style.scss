@@ -217,10 +217,11 @@ a {
 
 header {
   height: $header-height;
-  border-bottom: 1px solid $border;
+  // border-bottom: 1px solid $border;
   position: fixed;
   width: 100%;
   background: $white;
+  background-color: #f0f0f0;
   z-index: 1;
 }
 
@@ -238,7 +239,8 @@ footer {
   padding-bottom: 1rem;
 
   font-family: $helveticaNeue;
-  border-top: 1px solid $border;
+  // border-top: 1px solid $border;
+  background-color: #f0f0f0;
 
   [class*=col-] {
     @include baseline($baseline*.65,$baseline,$baseline*2);
@@ -246,7 +248,7 @@ footer {
 
   .version-number {
     @include baseline($baseline*.65,$baseline,$baseline*2);
-    color: #999;
+    color: #777;
   }
 }
 
