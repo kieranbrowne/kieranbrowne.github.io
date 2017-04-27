@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="grid posts">
+  <div class="col-1"></div>
+  <div class="col-3">
+    <ul class="side-menu">
+      {% for post in site.works %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+          <!-- <div class="excerpt"> -->
+          <!--   {% capture var %}{{ post.excerpt | slice: 0,130 | strip_html }}...{% endcapture%} -->
+          <!--   {{var}} -->
+          <!-- </div> -->
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="col-7">
+    <div class="spacer-5"></div>
+    {{ content }}
+    <div class="spacer-10"></div>
+  </div>
+</div>

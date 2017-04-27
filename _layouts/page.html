@@ -2,8 +2,27 @@
 layout: default
 ---
 
-<article class="page">
-
-      {{ content }}
-
-</article>
+<div class="grid posts">
+  <div class="col-1"></div>
+  <div class="col-3">
+    <ul class="side-menu">
+      {% if page.url == "/research/" or page.collection == "research" %}
+        {% for post in site.posts %}
+          <li>
+              <a href="{{ site.baseurl }}{{ post.url }}">
+                {{ post.title }}
+                <!-- <div class="excerpt"> -->
+                <!--   {% capture var %}{{ post.excerpt | slice: 0,130 | strip_html }}...{% endcapture%} -->
+                <!--   {{var}} -->
+                <!-- </div> -->
+              </a>
+          </li>
+        {% endfor %}
+        {% endif %}
+    </ul>
+  </div>
+  <div class="col-7">
+    {{ content }}
+    <div class="spacer-10"></div>
+  </div>
+</div>
