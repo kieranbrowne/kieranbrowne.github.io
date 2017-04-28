@@ -33,6 +33,15 @@ $baseline: 8px;
 
 @include gen-grid(12,$gutter,100%);
 
+@function col-width($n,$include-gutter: true) {
+  @if($include-gutter == true) {
+    @return calc((96.3 * 1vw - #{$gutter} * 13)/12 * #{$n} +  #{$gutter}  * #{$n})
+  } @else {
+    @return calc((96.3 * 1vw - 0 #{$gutter} *13)/12 * #{$n} +  #{$gutter}  * #{$n - 1})
+  }
+}
+
+
 body {
   background: $white;
   // font-family: $body-font;
@@ -54,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 ul, p {
   @include baseline(14px,$baseline*2,$baseline*5);
   color: darken(rgb(80,80,100),0%);
-  max-width: 40vw;
+  // max-width: 40vw;
 }
 
 .side-menu {
@@ -131,8 +140,23 @@ code {
   height: $baseline*10;
 }
 
+.slider:not(.slick-initialized) img ,
+.slick-slide img ,
 p img {
   max-width: 100%;
+}
+
+.slider:not(.slick-initialized) > div {
+  display: none;
+  &:first-of-type {
+    display: block;
+  }
+}
+
+.slick-slider,
+.slick-track,
+.slick-slide {
+  outline: none;
 }
 
 blockquote > p {
