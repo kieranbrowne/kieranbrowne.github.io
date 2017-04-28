@@ -35,9 +35,21 @@
           <a href="/"><h1 class="site-title">Kieran Browne</h1></a>
         </div>
         <div class="col-7 col-sm-7 nav">
-          <a href="/work">Work</a>
-          <a href="/bio">Bio</a>
-          <a href="/research">Research</a>
+          <a href="/work"
+             {% if page.url == "/work/" or page.layout == "work" %}
+             class="active"
+             {% endif %}>
+            Work</a>
+          <a href="/bio"
+             {% if page.url == "/bio/" %}
+             class="active"
+             {% endif %}>
+            Bio</a>
+          <a href="/research"
+             {% if page.url == "/research/" or page.layout == "post" %}
+             class="active"
+             {% endif %}>
+            Research</a>
         </div>
       </div>
     </header>

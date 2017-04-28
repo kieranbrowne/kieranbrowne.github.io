@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 ul, p {
   @include baseline(14px,$baseline*2,$baseline*5);
   color: darken(rgb(80,80,100),0%);
+  max-width: 40vw;
 }
 
 .side-menu {
@@ -66,7 +67,8 @@ ul, p {
 }
 
 table {
-  @include baseline($baseline*.7,$baseline,$baseline*2);
+  // @include baseline($baseline*.7,$baseline,$baseline*2);
+  @include baseline(14px,$baseline*3,$baseline*10);
   font-family: sans-serif;
   border-collapse: collapse;
   // border-collapse: separate;
@@ -75,7 +77,7 @@ table {
   thead {
   box-sizing: content-box;
     border-bottom: 1px solid #ccc;
-    padding-bottom: 0.5rem;
+    // padding-bottom: 0.5rem;
     padding: 1rem 0;
     padding: 2rem 0;
   }
@@ -83,7 +85,7 @@ table {
     line-height: 1rem;
     vertical-align: top;
     th , td {
-    padding: 0.5rem 0;
+    padding: $baseline 0;
       padding-right: 1.4rem;
       &:last-of-type {
         padding-right: 0;
@@ -101,7 +103,9 @@ table {
 }
 
 code {
-  @include baseline($baseline*.60,$baseline,$baseline*2);
+  @include baseline(14px,$baseline*2,$baseline*5);
+  // @include baseline($baseline*.60,$baseline,$baseline*2);
+  @include baseline(12px,$baseline*2,$baseline*5);
   background: #f2f2f2;
   // border-left: 1px solid #ccc;
   padding: .2rem .3rem;
@@ -168,7 +172,8 @@ ul {
 }
 
 h1 {
-  @include baseline($baseline*1.8,$baseline*2,$baseline*2);
+  // @include baseline($baseline*1.8,$baseline*2,$baseline*2);
+  @include baseline(14px,$baseline*2,$baseline*5);
   // letter-spacing: -.9px;
 }
 
@@ -178,16 +183,19 @@ h2 {
 }
 
 h3 {
-  @include baseline($baseline*.8,$baseline,$baseline*2);
+  // @include baseline($baseline*.8,$baseline,$baseline*2);
+  @include baseline(14px,$baseline*2,$baseline*5);
 }
 
 h4 {
-  @include baseline($baseline*.65,$baseline,$baseline*2);
+  // @include baseline($baseline*.65,$baseline,$baseline*2);
+  @include baseline(14px,$baseline*2,$baseline*5);
   color: #999;
 }
 
 #kurzgesagt {
-  @include baseline($baseline*.6,$baseline,$baseline*1.5);
+  // @include baseline($baseline*.6,$baseline,$baseline*1.5);
+  @include baseline(14px,$baseline*2,$baseline*5);
   font-weight: 400;
   color: $mid-text-grey;
 }
@@ -199,6 +207,7 @@ a {
   text-decoration: none;
   position: relative;
   cursor: pointer;
+  &.active ,
   &:hover {
     color: $highlight;
   }
@@ -273,7 +282,8 @@ footer {
   // }
 
   .version-number {
-    @include baseline($baseline*.65,$baseline,$baseline*2);
+    // @include baseline($baseline*.65,$baseline,$baseline*2);
+  @include baseline(14px,$baseline*2,$baseline*5);
     color: #777;
   }
 }
@@ -319,15 +329,18 @@ footer {
     color: #444;
   }
   h2 {
-    @include baseline($baseline*.8,$baseline,$baseline);
+    // @include baseline($baseline*.8,$baseline,$baseline);
+  @include baseline(14px,$baseline*2,$baseline*5);
   }
   .excerpt {
-    @include baseline($baseline*.7,$baseline,$baseline);
+    // @include baseline($baseline*.7,$baseline,$baseline);
+  @include baseline(14px,$baseline*2,$baseline*5);
     font-family: $helveticaNeue;;
   }
   .number {
     font-family: $mono-font;
-    @include baseline($baseline*.6,$baseline,$baseline*3);
+    // @include baseline($baseline*.6,$baseline,$baseline*3);
+  @include baseline(14px,$baseline*2,$baseline*5);
   }
 }
 
