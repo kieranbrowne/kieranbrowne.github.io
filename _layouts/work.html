@@ -6,7 +6,7 @@ layout: default
   <div class="col-1"></div>
   <div class="col-3 col-sm-11">
     <ul class="side-menu">
-      {% for post in site.works %}
+      {% for post in site.works reversed  %}
       <li>
         <a href="{{ site.baseurl }}{{ post.url }}"
            {% if post.url == page.url %}

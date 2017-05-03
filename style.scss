@@ -372,6 +372,45 @@ footer {
   // padding-top: $header-height;
 }
 
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-top: $baseline*5;
+
+  iframe {
+    position: absolute;
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gallery {
+  max-width: 100%;
+  margin-top: $baseline*3;
+
+  &.inline {
+
+    display: flex;
+
+    div {
+      flex-shrink: 1;
+      margin-left: $gutter;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+      
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
 // micro-classes
 .mono {
   font-family: $mono-font;
