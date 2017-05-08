@@ -2,6 +2,7 @@
 title: Running TensorFlow in Clojure
 layout: post
 kurzgesagt:
+tags: [clojure, tensorflow, java, interop]
 ---
 
 TensorFlow is a library for running matrix computation very fast. This makes it perfect for data science and in particular, machine learning.
