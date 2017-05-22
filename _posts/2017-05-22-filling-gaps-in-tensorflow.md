@@ -8,7 +8,7 @@ tags: [clojure, tensorflow, java, interop]
 TensorFlow's announcement of a Java api is great news for the clojure community. I wrote a post a couple of weeks ago that argued that TF's Java api [already provides everything that we need to do useful things](/research/clojure-tensorflow-interop/). This is mostly true, by leveraging interop we can easily get tensors flowing, use any of TensorFlow's many operations and do useful calculations with them. That said, if your plan is to use TensorFlow for machine learning, and I'm guessing this is most people, you'll probably regret the absense of the great optimizers that Python's TensorFlow api provides. Sure, you can build your own backpropagation out of TensorFlow operations but this becomes very tedious if your network is more than a few layers deep. So this week I had a go at implementing a functional gradient descent optimizer in Clojure/TensorFlow and I thought I'd share what I've learned.
 
 ### TL;DR
-The result is a function which given a TensorFlow operation representing the error of a network, returns an operation capable of minimizing the error.
+The result is a function, `gradient-descent`,  which given a TensorFlow operation representing the error of a network, returns an operation capable of minimizing the error.
 ```clojure
 ;; with a network described ...
 ;; using squared difference of training output 
