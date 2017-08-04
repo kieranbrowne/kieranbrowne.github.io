@@ -1,0 +1,24 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+    {{ content }}
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/2014.01.31/classList.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.min.js"></script>
+  <script>
+Reveal.initialize({
+  history: true,
+  transition: 'fade',
+  transitionSpeed: 'fast',
+  backgroundTransition: 'fade',
+  controls: false
+});
+  </script>
+</body>
+</html>
