@@ -489,9 +489,8 @@ footer {
       }
     }
 
-
     h2 {
-      @include baseline(3rem,3rem,4rem,2rem);
+      @include baseline(3rem,3rem,4rem);
       max-width: 80%;
       margin-left: auto;
       margin-right: auto;
@@ -500,7 +499,7 @@ footer {
     }
 
     h3 {
-      @include baseline(2rem,2.5rem,2rem,2rem);
+      @include baseline(2rem,2.5rem,4rem);
       max-width: 80%;
       margin-left: auto;
       margin-right: auto;
@@ -535,14 +534,14 @@ footer {
     img.full {
       max-width: 100%;
       max-height: 100%;
-      margin-top: -2rem;
+      margin-top: -0.1rem;
       z-index: -1;
       position: relative;
       
     }
 
     ul {
-      @include baseline(1.5rem,3rem, 6rem);
+      @include baseline(1.5rem,3rem, 4rem);
       list-style: none;
       li:before {
         content: "·";
