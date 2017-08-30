@@ -472,12 +472,40 @@ footer {
     height: 1px;
     font-size: 100%;
     background: #f9f9f9;
-    > section { padding: 0; }
+    > section { 
+      padding: 0; 
+
+      &.black {
+        background: black;
+        h2, h3 {
+          color: white;
+        }
+      }
+      &.white {
+        background: white;
+      }
+      &.tall {
+        height: 100%;
+      }
+    }
+
 
     h2 {
       @include baseline(3rem,3rem,4rem,2rem);
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
       font-weight: 900;
       color: rgb(30,38,50);
+    }
+
+    h3 {
+      @include baseline(2rem,2.5rem,2rem,2rem);
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 400;
+      color: rgb(60,68,80);
     }
 
     ul ,
@@ -503,6 +531,14 @@ footer {
       margin-top: 3rem;
       max-height: 50%;
       max-width: 24em;
+    }
+    img.full {
+      max-width: 100%;
+      max-height: 100%;
+      margin-top: -2rem;
+      z-index: -1;
+      position: relative;
+      
     }
 
     ul {
