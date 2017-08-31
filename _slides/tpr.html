@@ -19,84 +19,71 @@ reveal_config:
 
   <aside class="notes">
     <ul>
+      <li>Artificial neural networks are notoriously difficult to understand.</li>
+      <li>Are a class of algorithm inspired by the brain</li>
+      <li>They allow us to extract patterns from data and repeat these in future</li>
+
       <li>Critical approaches to data</li>
-      <li></li>
-    </ul>
-  </aside>
-</section>
-
-<section>
-  <h2>Hype about deep neural networks</h2>
-  <ul>
-    <li>The hottest thing in AI</li>
-  </ul>
-
-  <aside class="notes">
-    <ul>
-      <li>Neural networks are a class of machine learning algorithm inspired by the brain</li>
-      <li>They are the algorithm behind</li>
-      <li>Self-driving cars</li>
-      <li>Networks that compose poetry</li>
+      <li>I'm going to argue that:</li>
+      <li>Neural networks are a cultural way of knowing</li>
+      <li>They are vulnerable to cultural biases</li>
+      <li>They can enact learned biases on a grand scale</li>
+      <li>They are the algorithm behind recent success in solving problems that were previously only possible by humans.</li>
+      <li>They are universal approximators</li>
+      <li>Most commonly, they are trained on an example dataset and mathematically approximate the patterns it contains.</li>
+      <li>Their notable successes and generality has</li>
+      <li>Drive cars</li>
+      <li>Compose poetry</li>
+      <li>Translate between languages</li>
+      <li>Describe images</li>
+      <li>Grant parole to inmates</li>
     </ul>
   </aside>
 </section>
 
 <section class="black tall">
-  <h2>What's a neural network?</h2>
-  <img class="full" src="/images/neuron.jpg">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/33PSr8jB8h4?rel=0" frameborder="0" allowfullscreen></iframe>
 
   <aside class="notes">
     <ul>
-      <li>A neuron is the cell you have in your brain</li>
-      <li>There's about 86 billion in the human brain</li>
-      <li><i>Explain</i></li>
-    </ul>
-  </aside>
-</section>
-
-<section class="white">
-  <h2>What's a neural network?</h2>
-  <img class="full" src="/images/artificial-neural-net-diagram.jpg">
-
-  <aside class="notes">
-    <ul>
-      <li>We think of computers as being strictly logical</li>
-      <li><i>if this then that</i></li>
-      <li>Intelligence is not encoded in symbolic transformations</li>
-      <li>It's emergent intelligence</li>
-      <li>Each neuron is not intelligent but the whole is</li>
-      <li>It feels like this shouldn't work</li>
-    </ul>
-  </aside>
-</section>
-
-<section class="">
-  <h2>input <br>&darr;<br> [Black Box] <br>&darr;<br> output</h2>
-
-  <aside class="notes">
-    <ul>
+      <li>Neural networks are considered to be black boxes because it is difficult to understand its internal processes</li>
       <li>A black box refers to a system whose internal patterns and process are inscrutable</li>
-    </ul>
-  </aside>
-</section>
-
-<section class="">
-  <h2><img src="http://placebear.com/200/200"><br>&darr;<br> [ ??? ] <br>&darr;<br> "It's a bear"</h2>
-
-  <aside class="notes">
-    <ul>
+      <li>We give them a bunch of data, and they transform it into some other form</li>
+      <li>Training a network involves running a bunch of data through the network telling it where it went wrong and making small updates to improve its performance</li>
+      <li>This process can approximate any pattern contained in data, even ones the researcher is not aware of</li>
+      <li>This is a powerful technique because it gives us a handle on systems which are yet to be fully understood</li>
       <li>Neural networks are black boxes</li>
       <li>BB problem cited many times as a barrier to adoption</li>
       <li>But after some major successes in image recognition tasks people have started using them anyway</li>
       <li>Levels of abstraction</li>
+      <li>It's not that we can't see inside neural networks as such, just that relationships between input and output are obfuscated in complexity.</li>
+      <li>Nowadays we come into contact with neural networks all the time</li>
+      <li>You might not care if google translate inexplicably gives you a bad translation every now and again</li>
+      <li>You might feel differently about getting into a self-driving car, if no one knows how it works.</li>
+      <li>We want our networks to explain themselves</li>
+      <li>Semantic meaning is needed to make sense of these things</li>
+      <li>For deep neural networks, the raw text or pixel data is rarely a we want our explanation for a self-driving car in terms of semi-trailers, pedestrians and cliffs</li>
+      <li>We would like technicians to be able to explain the decisions of the network but this isn't always possible</li>
+    </ul>
+  </aside>
+</section>
+
+<section class="">
+  <h2>The problem</h2>
+
+  <aside class="notes">
+    <ul>
+      <li>ANNs occupy a curious ontological status because they conflate prediction with action</li>
+      <li>They use the same mathematics that statisticians use to understand the world, to shape it</li>
+      <li>Neural networks infer their own semantics</li>
     </ul>
   </aside>
 </section>
 
 <section class="">
 
-  <h2>Neural networks infer their own semantic meaning</h2>
-
+  <h2>Semantics derived automatically from language corpora necessarily contain human biases</h2>
+  <p>Caliskan, Aylin, Joanna J Bryson, and Arvind Narayanan. (2017).</p>
 
   <aside class="notes">
     <ul>
@@ -123,23 +110,48 @@ reveal_config:
   </aside>
 </section>
 
-
 <section class="">
 
-  <h2>The way we use and understand neural networks is built on realist models of knowledge</h2>
+  <h2>Explaining visually</h2>
 
   <aside class="notes">
     <ul>
-      <li>These are encultured systems.</li>
-      <li>There is culture latent in human data</li>
-      <li>Neural networks will extract any salient patterns in data</li>
-      <li>Including cultural patterns</li>
+      <li>Why visualisation?</li>
+      <li>Visualisation has had major successes in managing complexity</li>
+      <li>More than ever before knowledge is visually mediated</li>
+      <li>Our visual faculties have a number of properties which make them particularly good at expressing comparision</li>
     </ul>
   </aside>
 </section>
 
-<section>
-  <h2>Project Scope</h2>
+<section class="">
+
+  <h2>Explaining visually</h2>
+  <img src="https://oregoneconomicanalysis.files.wordpress.com/2011/09/big5_emp_returntopeak1.jpg">
+
+  <aside class="notes">
+    <ul>
+      <li>Why visualisation?</li>
+      <li>Visualisation has had major successes in managing complexity</li>
+      <li>More than ever before knowledge is visually mediated</li>
+      <li>Our visual faculties have a number of properties which make them particularly good at expressing comparision</li>
+    </ul>
+  </aside>
+</section>
+
+<section class="">
+
+  <h2>Explaining visually</h2>
+  <img src="http://www.iphonefaq.org/files/styles/large/public/Fyuse.jpeg?itok=A37Yk_cq">
+
+  <aside class="notes">
+    <ul>
+      <li>Why visualisation?</li>
+      <li>Visualisation has had major successes in managing complexity</li>
+      <li>More than ever before knowledge is visually mediated</li>
+      <li>Our visual faculties have a number of properties which make them particularly good at expressing comparision</li>
+    </ul>
+  </aside>
 </section>
 
 <section>
@@ -161,44 +173,56 @@ reveal_config:
 
 <section>
   <h3>Humanities Approaches to Graphical Display</h3>
-  <p>
-  This is the hallmark of realist models of knowledge and needs to be 
-  subjected to a radical critique to return the humanistic tenets of 
-  constructedness and interpretation to the fore. Realist approaches 
-  depend above all upon an idea that phenomena are observer-independent 
-  and can be characterized as data.
-  </p>
+  <p>Rethinking our approach to visualization and the assumptions that underpin it</p>
+  <ul>
+    <li>Constructivist notions of data</li>
+    <li>Representing ambiguity</li>
+    <li>Designing for interpretation and sense-making</li>
+  </ul>
 
   <aside class="notes">
     <ul>
       <li>Data as capta</li>
       <li>Constructedness of data</li>
       <li>"intellectual Trojan horse"</li>
+      <li>methods of presenting ambiguity and uncertainty in more nuanced terms would be useful</li>
+    </ul>
+  </aside>
+</section>
+
+<section class="">
+
+  <h2>The way we use and understand neural networks is built on realist models of knowledge</h2>
+
+  <aside class="notes">
+    <ul>
+      <li>These are encultured systems.</li>
+      <li>There is culture latent in human data</li>
+      <li>Neural networks will extract any salient patterns in data</li>
+      <li>Including cultural patterns</li>
     </ul>
   </aside>
 </section>
 
 <section>
-  <h2>Related Work</h2>
+  <h2>Proposed methods</h2>
   <ul>
-    <li>Behavioural visualisations</li>
+    <li>Critique current visual language of neural networks with care for the assumptions they bring.</li>
+    <li>Design experimental visualisations and interfaces to explore the possibilities of visual representation</li>
   </ul>
+
+  <aside class="notes">
+    <ul>
+      <li>Practice-led research</li>
+      <li>Cultural criticism</li>
+    </ul>
+  </aside>
 </section>
 
 <section>
-  <h2>Methodologies</h2>
-  <h3>Practice-led research</h3>
-  <h3>Criticism</h3>
+  <h2>Questions</h2>
 </section>
 
-<section>
-  <h2>Proposed directions</h2>
-  <ul>
-    <li>Exploratory interfaces</li>
-    <li>Collective sense making</li>
-    <li>Behavioural visualisations</li>
-  </ul>
-</section>
 
 
 <div style="display: none; font-size: 0;">
