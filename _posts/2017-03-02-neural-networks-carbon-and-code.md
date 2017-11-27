@@ -1,6 +1,7 @@
 ---
 title: Neural Networks in Carbon and Code
 layout: post
+thumbnail: /images/neurons.jpg
 kurzgesagt: Artificial neural networks do not deal in symbolic transformation and representation. Instead their decisions emerge from the relative strengths of countless connections between simpler parts. Is it possible to make this complexity comprehensible to a person? And is it possible for a person to reach inside and manipulate a neural network without breaking it?
 excerpt: The artificial neural network is a powerful programming paradigm that has achieved some impressive feats in recent years. 
 ---

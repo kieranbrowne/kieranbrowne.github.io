@@ -38,7 +38,7 @@ $ratio: 1.4 // cap height : descender
 
 @mixin gen-grid($grid-def) {
 
-  .grid#{map-get($grid-def,namespace)} {
+  .grid {
 
     max-width: map-get($grid-def, container);
     width: 100%;

@@ -1,6 +1,7 @@
 ---
 title: Design and Complexity
 layout: post
+thumbnail: /images/dieter-rams-inspired-radio.jpg
 kurzgesagt: What design problems are posed by neural nets as a software product. Particularly, is the complexity of NNs a barrier to a user’s ability to understand and, in consequence, to control them.
 excerpt: Simplicity, essentiality and openness are three words used by the influential german designer Dieter Rams to summarise his work. Rams was revolutionary in his resolve to simplify everyday objects through industrial design.
 ---

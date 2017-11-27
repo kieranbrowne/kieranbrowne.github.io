@@ -2,7 +2,7 @@
 layout: work
 title: Complicit Cinema
 hero: /images/complicit-cinema.jpg
-thumbnail: /images/complicit-cinema-schematic.png
+thumbnail: /images/complicit-cinema.jpg
 year: 2013
 materials: EEG, Hitchcock scene, custom software
 ---

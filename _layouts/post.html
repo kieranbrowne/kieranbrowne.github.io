@@ -3,19 +3,11 @@ layout: default
 ---
 
 <div class="grid">
-  <div class="col-1"></div>
-  <div class="col-3 col-sm-10">
-    <ul class="side-menu">
-      <li><a>Blog posts</a></li>
-      <li><a>Articles</a></li>
-    </ul>
-  </div>
-  <div class="col-0 col-sm-1"></div>
-  <div class="col-0 col-sm-1"></div>
-  <div class="col-7 col-sm-10 main">
+  <div class="col-8 col-sm-10 col-xs-12 col-push-2 col-sm-push-1 col-xs-push-0 content">
     <div class="spacer-5"></div>
     {% if page.url != "/research/" %}
     <h1>{{ page.title }}</h1>
+    {{ page.date | date: "%m/%d/%Y" }}
     {% endif %}
     {{ content }}
     <div class="spacer-10"></div>

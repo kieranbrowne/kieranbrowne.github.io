@@ -17,11 +17,7 @@ In judging whether an art object is ‘the real thing’, we tend to care mostly
 ![Pop art machine](/images/sam-gallery.jpg)
 
 <div class="gallery inline">
-<div>
-    <img src="/images/Jorn-7-7-0.jpg">
-</div>
-<div>
-    <img src="/images/Jorn-3-0-6.jpg">
-</div>
+    <div><img src="/images/Jorn-7-7-0.jpg"></div>
+    <div><img src="/images/Jorn-3-0-6.jpg"></div>
 </div>
 
