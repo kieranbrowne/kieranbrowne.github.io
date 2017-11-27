@@ -29,28 +29,32 @@ $phi: 1.618;
 }
 
 
-$gutter:20px;
 $baseline: 8px;
 
-@include gen-grid(12,$gutter,100%);
+$grid: (
+  columns: 12,
+  gutter: 2.5rem,
+  container: 100vw,
+  namespace: ""
+);
 
-@function col-width($n,$include-gutter: true) {
-  @if($include-gutter == true) {
-    @return calc((96.3 * 1vw - #{$gutter} * 13)/12 * #{$n} +  #{$gutter}  * #{$n})
-  } @else {
-    @return calc((96.3 * 1vw - 0 #{$gutter} *13)/12 * #{$n} +  #{$gutter}  * #{$n - 1})
-  }
-}
-
+@include gen-grid($grid);
 
 body {
   background: $white;
+  background: rgb(214,215,218);
   // font-family: $body-font;
   font-family: $helveticaNeue;
   color: $darkGray;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: subpixel-antialiased;
+
+  transition: background .4s;
+
+  &.darker {
+    background: rgb(124,125,198);
+  }
 }
 
 // BASIC STYLES
@@ -78,6 +82,48 @@ p {
     content: none;
   }
 }
+
+.works {
+  font-size: 0;
+}
+
+@keyframes slide-in {
+  from { opacity: 0; transform: skewY(-10deg) translate(0,-200px);}
+  to {opacity: 1; transform: skewY(0deg) translate(0,0);}
+}
+
+.tile {
+  width: col-width($grid,3,false);
+  &:nth-of-type(2n+1) {
+    margin-right: map-get($grid,gutter);
+  }
+  margin-bottom: map-get($grid,gutter);
+  display: inline-block;
+  position: relative;
+
+  animation-name: slide-in;
+  animation-duration: 1s;
+  animation-delay: 1s; 
+  animation-fill-mode: both;
+
+  @for $i from 1 through 10 {
+    &:nth-of-type(#{$i}) {
+      animation-delay: 1 - ($i * .1s); 
+    }
+  }
+
+  a {
+    display: block;
+    font-size: 0rem;
+    background: #ddd;
+    height: col-width($grid,2,false);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 29px 0px rgba(80,90,100,0.15);
+  }
+
+}
+
 
 table {
   // @include baseline($baseline*.7,$baseline,$baseline*2);
@@ -124,7 +170,22 @@ code {
   padding: .2rem .3rem;
 }
 
+div.highlighter-rouge {
+  width: col-width($grid,7);
+  margin-left: (col-width($grid,-1,false));
+  
+  code {
+    // width: col-width($grid,8);
+    // margin-left:
+    width: 100%;
+    margin-right: 0;
+    box-sizing: content-box;
+    @include baseline(17px,$baseline*3,$baseline*5,$baseline*3);
+  }
+}
+
 .highlighter-rouge {
+
   .c1, .p {
     color: #aaa;
   }
@@ -145,9 +206,18 @@ code {
 }
 
 .slider:not(.slick-initialized) img ,
-.slick-slide img ,
-p img {
+.slick-slide img {
   max-width: 100%;
+}
+
+p img {
+  width: col-width($grid,10);
+  margin-left: (col-width($grid,-3,false));
+
+  &:before {
+    content: "";
+    display: block;
+  }
 }
 
 .slider:not(.slick-initialized) > div {
@@ -235,13 +305,13 @@ h4 {
   border-bottom: 1px solid $dark-grey;
 
   &:hover {
-  border-bottom: 1px solid $highlight;
+    border-bottom: 1px solid $highlight;
   }
 }
 
 .main {
     position: relative;
-    code, p, h1, ul ,h2 {
+    p, h1, ul ,h2 {
         box-sizing: content-box;
         max-width: 35rem;
     }
@@ -255,9 +325,16 @@ a {
   text-decoration: none;
   position: relative;
   cursor: pointer;
+  display: inline-block;
+  transition: all .2s cubic-bezier(0.455, 0.030, 0.515, 0.955);
   &.active ,
   &:hover {
     color: $highlight;
+    // transform: scale(0.86026) skew(-30deg) rotate(30deg,0deg);
+    // transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+    // transform: rotateX(20deg) rotateY(-1deg) rotateZ(-04.5deg);
+    transform: rotateX(2deg) rotateY(0deg) rotateZ(-0.5deg);
+    transform: skewY(-6deg);
   }
 
   // fancy border swipe 
@@ -396,7 +473,7 @@ footer {
 
     div {
       flex-shrink: 1;
-      margin-left: $gutter;
+      margin-left: map-get($grid,gutter);
 
       &:first-of-type {
         margin-left: 0;

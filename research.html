@@ -6,4 +6,17 @@ sidemenu: research
 ---
 
 
-
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ site.baseurl }}{{ post.url }}"
+               {% if post.url == page.url %}
+               class="active"
+               {% endif %}>
+              {{ post.title }}
+              <!-- <div class="excerpt"> -->
+              <!--   {% capture var %}{{ post.excerpt | slice: 0,130 | strip_html }}...{% endcapture%} -->
+              <!--   {{var}} -->
+              <!-- </div> -->
+            </a>
+          </li>
+        {% endfor %}

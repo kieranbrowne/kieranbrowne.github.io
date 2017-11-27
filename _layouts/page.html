@@ -7,6 +7,7 @@ layout: default
   <div class="col-3">
     <ul class="side-menu">
       {% if page.url == "/research/" or page.collection == "research" %}
+        <li><a>Test</a></li>
         {% for post in site.posts %}
           <li>
               <a href="{{ site.baseurl }}{{ post.url }}">

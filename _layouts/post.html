@@ -6,20 +6,8 @@ layout: default
   <div class="col-1"></div>
   <div class="col-3 col-sm-10">
     <ul class="side-menu">
-        {% for post in site.posts %}
-          <li>
-              <a href="{{ site.baseurl }}{{ post.url }}"
-                 {% if post.url == page.url %}
-                 class="active"
-                 {% endif %}>
-                {{ post.title }}
-                <!-- <div class="excerpt"> -->
-                <!--   {% capture var %}{{ post.excerpt | slice: 0,130 | strip_html }}...{% endcapture%} -->
-                <!--   {{var}} -->
-                <!-- </div> -->
-              </a>
-          </li>
-        {% endfor %}
+      <li><a>Blog posts</a></li>
+      <li><a>Articles</a></li>
     </ul>
   </div>
   <div class="col-0 col-sm-1"></div>
@@ -39,23 +27,6 @@ layout: default
     <div class="spacer-10"></div>
     {% endif %}
   </div>
-
-
-  <!-- <div class="post col-3 col-sm-12"> -->
-  <!--   <p class="sans-serif"> -->
-  <!--     Kieran Browne<br> -->
-  <!--     <span class="grey-text"> {{ page.date | date: "%B %e, %Y" }} </span> -->
-  <!--   </p> -->
-  <!--   {% if page.kurzgesagt != null %} -->
-  <!--     <h4 id="kurzgesagt" title="My research in summary." style="cursor: help;"><em>Kurzgesagt</em> &mdash; --> 
-  <!--       {{ page.kurzgesagt }}</h4> -->
-  <!--   {% endif %} -->
-  <!--   <p class="sans-serif bold"> -->
-  <!--     Share: -->
-  <!--     <a href="https://twitter.com/home?status={{page.title}}%20-%20http://kieranbrowne.com{{page.url}}"><i class="fa fa-twitter"></i></a> -->
-  <!--   </p> -->
-
-  <!-- </div> -->
 
 </div>
 

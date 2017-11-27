@@ -64,3 +64,6 @@ collections:
     slides:
         output: true
         permalink: /slides/:title/
+    vis:
+        output: true
+        permalink: /vis/:title/

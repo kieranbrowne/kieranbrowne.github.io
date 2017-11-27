@@ -2,5 +2,18 @@
 layout: work
 ---
 
-<p>
-</p>
+<div class="works">
+  {% for post in site.works reversed  %}
+    <div class="work tile" >
+      <a href="{{ site.baseurl }}{{ post.url }}"
+       {% if post.url == page.url %}
+       class="active"
+       {% endif %}
+       {% if post.thumbnail %}
+       style="background-image: url({{post.thumbnail}});"
+       {% endif %} >
+          {{ post.title }}
+      </a>
+    </div>
+  {% endfor %}
+</div>
