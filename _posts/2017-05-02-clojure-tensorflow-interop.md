@@ -1,6 +1,7 @@
 ---
 title: Running TensorFlow in Clojure
 layout: post
+thumbnail: /images/clojure-tensorflow-thumb.jpg
 kurzgesagt:
 tags: [clojure, tensorflow, java, interop]
 ---

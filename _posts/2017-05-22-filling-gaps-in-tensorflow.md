@@ -1,6 +1,7 @@
 ---
 title: Filling gaps in TensorFlow's Java api
 layout: post
+thumbnail: /images/clojure-tensorflow-thumb-green.jpg
 kurzgesagt: 
 tags: [clojure, tensorflow, java, interop]
 ---
