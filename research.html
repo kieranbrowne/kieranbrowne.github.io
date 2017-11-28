@@ -33,10 +33,13 @@ sidemenu: research
            {% if post.thumbnail %}
            style="background-image: url({{post.thumbnail}});"
            {% endif %} >
-           <div class="title">
-              {{ post.title }}
-           </div>
           </a>
+          <div class="title">
+            {{ post.title }}
+          </div>
+          <div class="year">
+            {{ post.date | date: "%Y" }}
+          </div>
         </div>
       {% endfor %}
     </div>

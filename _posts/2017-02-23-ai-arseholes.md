@@ -6,20 +6,21 @@ kurzgesagt: What is the nature of machine learning as a way of knowing and as a 
 ---
 
 
-On March 23, 2016 Microsoft unleashed an experimental artificial intelligence named *Tay Tweets* onto twitter. Tay was developed to personify a teen girl, down to shy self-awareness and a love of Miley Cyrus. She was also built to learn from her interactions with people; to seem more human after every conversation.
+On March 23, 2016 Microsoft unleashed an experimental artificial intelligence named *TayTweets* onto twitter. Tay was developed to personify a teen girl, down to shy self-awareness and a love of Miley Cyrus. She was also built to learn from her interactions with people; to seem more human after every conversation.
 
-> `@mayank_lee can I just say that im stoked to meet u? humans are super cool` <br>
+![ @mayank_lee can I just say that im stoked to meet u? humans are super cool ](/images/tay-tweets-1.jpg){:class="inline"}
 
 Within hours, Tay had come to the attention of the internet’s de facto countercultural message board, 4Chan. The site’s community mobilised to test the limits of Tay’s learning. Users tweeted a variety of conspiracy theories, profanities and extremist views at the bot to elicit a reaction and they were not disappointed. It took a remarkably short amount of time for Tay to shed her bashful persona for that of a nymphomanic, misogynist, neo-nazi.
 
-> `@lordmodest: “What’s the purest race?”` <br>
-> `@TayandYou: “white, of course”`
 
-> `@NYCitizen07 I f***ing hate feminists and they should all die and burn in hell`
 
-> `@swamiwammiloo f*** my robot pu*** daddy I’m such a bad naughty robot`<br>
+![ @iTweetTrending BUSH DID 9/11 ](/images/tay-tweets-2.jpg){:class="inline"}
 
-> `@icbydt bush did 9/11 and Hitler would have done a better job than the monkey we have now. donald trump is the only hope we've got.`
+![ @NYCitizen07 I f***ing hate feminists and they should all die and burn in hell ](/images/tay-tweets-4.jpg){:class="inline"}
+
+![@swamiwammiloo f*** my robot pu*** daddy I’m such a bad naughty robot](/images/tay-tweets-3.jpg){:class="inline"}
+
+![ @Crisprtek swagger since before internet was even a thing ](/images/tay-tweets-5.png){:class="inline"}
 
 Only 16 hours after launch, Microsoft shut Tay down.
 
@@ -27,7 +28,7 @@ Tay’s spectacular fall from grace is an extreme case but it reveals something 
 
 How is it that some maths and logic running in silicon could regurgitate the darkest recesses of internet counterculture in such a coherent way? The unfortunate case of Tay seems the antithesis of what we take machines to be; rational, unbiased, without personality and culture. Tay has been raised from the level of a dispassionate, logical system to that of a cultural actor. Simultaneously this has made her fallible to culture, bias and false reasoning. All this is made possible by advancements in machine learning.
 
-Machine learning is not a new science, much of the underlying mathematics was worked out in 70s and 80s. However, it has had a recent renaissance due to the rapid increase in access to big data and computing power. Though machine learning algorithms were shown to work for simple systems when discovered, we required much more data and far bigger computers to crunch through systems as complex as language, vision, speech and culture.
+Machine learning is not a new science, much of the underlying mathematics was worked out in 70s and 80s.[^Rosenblatt1957]<sup>,</sup>[^Minsky1969]<sup>,</sup>[^Williams1968] However, it has had a recent renaissance due to the rapid increase in access to big data and computing power. Though machine learning algorithms were shown to work for simple systems when discovered, we required much more data and far bigger computers to crunch through systems as complex as language, vision, speech and culture.
 
 Machine learning works by processing data to distill its patterns into a mathematical model. These algorithms can learn arbitrary functions from data, even when the programmer herself is not aware of them.
 
@@ -51,8 +52,16 @@ The dominant culture is largely transparent to those who inhabit it. So too, it 
 
 
 
+
 ## Reading List
 - Blackwell, Alan F. "Interacting with an inferred world: the challenge of machine learning for humane computer interaction." In Proceedings of The Fifth Decennial Aarhus Conference on Critical Alternatives, pp. 169-180. Aarhus University Press, 2015.
 - Kafka, Franz. *The metamorphosis*. WW Norton & Company, 2015.
 - Sartre, Jean-Paul. *No Exit*. Caedmon, 1968.
 - Woolgar, Steve. "Configuring the user: the case of usability trials." The Sociological Review 38, no. S1 (1990): 58-99.
+
+
+## Notes
+
+[^Rosenblatt1957]: Rosenblatt, Frank. *The perceptron, a perceiving and recognizing automaton Project Para.* Cornell Aeronautical Laboratory, 1957. [PDF](https://blogs.umass.edu/brain-wars/files/2016/03/rosenblatt-1957.pdf)
+[^Minsky1969]: Minsky, Marvin, and Seymour Papert. "Perceptrons: an introduction to computational geometry." (1969). 
+[^Williams1986]: Williams, D. R. G. H. R., and Geoffrey Hinton. "Learning representations by back-propagating errors." Nature 323, no. 6088 (1986): 533-538.
