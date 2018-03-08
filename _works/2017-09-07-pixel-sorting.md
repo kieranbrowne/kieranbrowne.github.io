@@ -1,7 +1,7 @@
 ---
 layout: work
 title: Pixel Sorting Experiments
-thumbnail: /images/pixel-sort-3.png
+thumbnail: /images/pixel-sort-thumbnail.jpg
 ---
 
 

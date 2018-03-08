@@ -3,7 +3,7 @@ layout: work
 title: Artificial Artists
 year: 2014 &ndash; ongoing
 materials: plywood, PCB, stepper motors, rubber belt, custom software
-thumbnail: /images/ava-1.jpg
+thumbnail: /images/artificial-artists-thumbnail.jpg
 ---
 
 *Artificial Artists* is a series of art machines that contribute to the creation of visual "ideas" as well as the production of images. 

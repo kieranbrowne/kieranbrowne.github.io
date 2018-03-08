@@ -123,6 +123,7 @@ p {
 
 .tile {
   width: col-width($grid,4);
+
   &:nth-of-type(2n+1) {
     margin-right: map-get($grid,gutter);
   }
@@ -176,6 +177,24 @@ p {
     box-sizing: border-box;
     display: inline-block;
     border-bottom: 1px solid grey;
+  }
+}
+
+.tags {
+
+  list-style: none;
+  padding-left: 0;
+  @include baseline(0.9rem,1.5rem,2rem);
+
+  li {
+    display: inline-block;
+    background: #eee;
+    padding-left: .4em;
+    padding-right: .4em;
+
+    &:before {
+      content: none;
+    }
   }
 }
 
@@ -319,7 +338,9 @@ p img {
 }
 
 blockquote > p {
-  color: #999;
+  color: #333;
+  font-weight: 600;
+  @include baseline(1.8rem,2rem, 4rem);
 }
 
 .avatar {
@@ -385,6 +406,10 @@ h4 {
   @include baseline(1.4rem,2rem,4rem);
   /* color: #999; */
   color: $dark-grey;
+}
+
+.date {
+  @include baseline(1.0rem,2rem,2rem);
 }
 
 #kurzgesagt {
@@ -654,7 +679,7 @@ footer {
 
       &.black {
         background: black;
-        h2, h3 {
+        h2, h3, p {
           color: white;
         }
       }
@@ -698,7 +723,7 @@ footer {
 
     blockquote {
       color: #777;
-      font-weight: 200;
+      font-weight: 600;
       //font-style: italic;
       max-width: 24em;
     }
@@ -735,5 +760,7 @@ footer {
     }
   }
 }
+
+.footnotes ol li p a { vertical-align: top; }
 
 @import "highlights";
