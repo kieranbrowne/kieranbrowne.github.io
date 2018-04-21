@@ -6,7 +6,7 @@ kurzgesagt: Machine learning is a powerful tool changing the way we solve proble
 excerpt: The first week of my PhD has been a mix of fun and frustration. I planned an ambitious start to my research which fizzled out due to some enrolment issues.
 ---
 
-![Starting Blocks](/images/starting-blocks.jpg)
+{% include hero.html src="/images/starting-blocks.jpg" alt="Starting Blocks" %}
 
 The first week of my PhD has been a mix of fun and frustration. I planned an ambitious start to my research which fizzled out due to some enrolment issues (my fault). And by the time it was all sorted, the first day was all but over. 
 
@@ -30,7 +30,7 @@ Crucially though, machine learning is not transparent. A programmer can no longe
 
 The elements which govern the system’s decisions are not in the code itself but rather in a web of interlinked coefficients with no discernable connection to a feature or rule. This structure is difficult to visualise and even more difficult to manipulate.
 
-![Jenga](/images/jenga.jpg)
+{% include hero.html src="/images/jenga.jpg" alt="Jenga" %}
 
 What we risk with digital services increasingly dominated by machine learning is the techno-mysticism that comes from incomprehensible complexity. To the consumer, a search engine might as well be magic, they have no way to perceive or conceive of its processes. What are the consequences when the programmer too, cannot understand and manipulate the services they create?
 

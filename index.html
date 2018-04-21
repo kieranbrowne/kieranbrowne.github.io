@@ -15,12 +15,27 @@ classes: front-page
   <div class="col-7 col-sm-10 col-push-0 col-xs-push-0 col-xs-12">
     <div class="spacer-10"></div>
     <div class="slider">
-      <div><img src="/images/ava-1.jpg" alt=""></div>
-      <div>
-        <img src="/images/rhizome.jpg" alt="">
+      <div style="height: 64vh">
+        <img src="/images/ava-1.jpg" alt="">
       </div>
       <div>
+        <div style="overflow: hidden; 
+          padding-bottom: 64vh;
+          background-image: url(/images/pixel-sort-1.png);
+          background-size: cover;
+          background-position: center 30%;">
+        </div>
+      </div>
+      <div style="height: 64vh; overflow: hidden;">
         <img src="/images/nest-projected.jpg" alt="">
+      </div>
+      <div>
+        <div style="overflow: hidden; 
+          padding-bottom: 64vh;
+          background-image: url(/images/after-x-0.png);
+          background-size: cover;
+          background-position: center 30%;">
+        </div>
       </div>
     </div>
   </div>
@@ -37,7 +52,7 @@ $('.slider').slick({
   arrows: false,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 3500,
+  autoplaySpeed: 2500,
   speed: 500,
   fade: true,
   cssEase: 'linear'

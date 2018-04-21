@@ -7,61 +7,49 @@ week: 2
 thumbnail: /images/piano-piece-for-david-tudor-4.jpg
 ---
 
-Jaron Lanier’s manifesto cum [red scare](https://en.wikipedia.org/wiki/Red_Scare) paranoia *You Are Not a Gadget* (2010) challenges the structures and politics of “Web 2.0” era digital culture. Not all of the ideas in the book have aged well and some likely never made sense, but his examination of crystallisation of ideas through software representations is still relevant and its lessons are yet to be learned. In this post I want to look at Lanier’s analysis of software representation and challenge his suggestion that these metaphors are “locked in”.
+Jaron Lanier’s manifesto cum [red scare](https://en.wikipedia.org/wiki/Red_Scare) paranoia *You Are Not a Gadget* (2010) challenges the structures and politics of “Web 2.0” era digital culture. Not all of the ideas in the book have aged well and some likely never made sense, but his examination of crystallisation of ideas through software representations is still relevant and its lessons are yet to be learned. In this post I want to look at Lanier’s analysis of software representation as philosophy and challenge his suggestion that these metaphors are “locked in”.
 
 *You Are Not a Gadget* is written at an turning point in the history of the web; after the dot com bust and the emergence of web 2.0 but before Facebook executives had worked out how to monetise the platform. These years saw the waning of the personal home page as a defining unit of authorship on the web and the birth of the media prosumer and the social network. For Lanier, these developments represent a wrong turn in the digital revolution, one which threatens to reshape society and our notion of personhood. Particularly, Lanier takes aim at openness and anonymity on web platforms such as Wikipedia which, he suggests, mark a secession of individual identity to groupthink.
 
 Lanier implicitly draws on entrenched archetypes of Eastern and Western culture in his critique. He blames the state of network culture on “digital Maoists” a group consisting of open source contributors, Creative Commons users, web 2.0 platforms, the Linux community, file sharers and remix culture.
 
-Almost a decade on, it’s clear that social media and its Maoist counterparts have not brought about the end of the individual identity. Indeed, culture appears more fractured than ever, we are more likely to criticise Facebook for creating divided [echo chambers](https://arstechnica.com/science/2017/03/the-social-media-echo-chamber-is-real/) than pervasive groupthink. In answer to Lanier’s fears about anonymity, Snowden showed that we  were never really anonymous in the first place. Against the apparently communist agenda of seemingly free and open user-generated content, tech companies like Facebook and Google have become capitalist behemoths, buying or crushing startups and turning over billions in profit.[^schooloflife]
+Almost a decade on, it’s clear that social media and its Maoist counterparts have not brought about the end of individual identity. Indeed, culture appears more fractured than ever, we are more likely to [criticise Facebook for creating divided echo chambers](https://arstechnica.com/science/2017/03/the-social-media-echo-chamber-is-real/) than pervasive groupthink. In answer to Lanier’s fears about anonymity, Snowden showed that we  were never really anonymous in the first place. Against the apparently communist agenda of seemingly free and open user-generated content, tech companies like Facebook and Google have become capitalist behemoths, buying or crushing competition and turning over billions in profit.[^schooloflife]
 
-Of course, predicting the future is difficult and the text has much to offer aside from prescience. In chapter one, Lanier argues, with reference to specific examples, that the nature digital technologies are not inevitable but constructed.
-“The design of the web as it appears today was not inevitable.”
-
-This might seem like the exaggerations of radical postmodernism.
-Tim Berners-Lee around the same like was talking about designing the web as philosophical engineering. In an informal video interview posted to DailyMotion he said; “It struck me that when we are designing web protocols we’re actually defining the way a new world works and creating a new world… so people, when they use your system, to a certain extent, they have to leave their philosophy at the door… and they have to [agree to] work according to your system. So you can build systems, worlds which have different properties.”[^Berners-Lee2010]
-
-“Before MIDI, a musical note was a bottomless idea that transcended absolute definition.”
+Of course, predicting the future is difficult and the text has much to offer aside from prescience. It is Lanier’s assertion that software has philosophical and social consequences that I want to focus on here. In chapter one he argues that the present nature digital technologies are not inevitable but emerged often arbitrarily as victors amongst many credible alternatives. This might seem like the exaggerations of radical postmodernism and indeed many programmers would deny any philosophical dimension to their work. But, as Lanier identifies, there also exists in computer science a “distinct tradition” that thinks deeply about the consequences of its labour and which might be called “humanistic”. Tim Berners-Lee around the same time the manifesto was written began describing the design of web protocols as “philosophical engineering”. In an informal video interview posted to DailyMotion he said; “It struck me that when we are designing web protocols we’re actually defining the way a new world works and creating a new world… so people, when they use your system, to a certain extent, they have to leave their philosophy at the door… and they have to [agree to] work according to your system. So you can build systems, worlds which have different properties.”[^Berners-Lee2010] For Lanier, the properties of Berner-Lee’s web are radical freedom and openness whose initial conditions have led to the dominant culture.
 
 His argument appears at first glance to follow a common pattern of humanistic research, which might be called *deconstruction*.[^definition]
-Take a ubiquitous and unexamined contemporary idea. Recontextualise it within the history of ideas from which it emerged. Show how this context shaped its development and examine contemporaneous alternative ideas that might have created alternative presents. In short, show the idea to be constructed and contingent so it may be reopened for development.
-Only, Lanier takes a fatalistic turn with his concept of lock-in. The Web, MIDI and filesystems, even when shown to be constructed cannot be fixed. The opportunity has been forever lost.
+Take a ubiquitous and unexamined contemporary idea/institution/system. Recontextualise it within the history of ideas from which it emerged. Show how this context shaped its development and examine contemporaneous alternative ideas that might have created alternative presents. In short, show the idea to be constructed and contingent so it may be reopened for development.
+Only, Lanier takes a fatalistic turn with his concept of *lock-in*. Software, he argues, cannot be fixed. As it grows in size it becomes a “cruel maze”; extremely difficult to modify. As such, large programs tend to crystallise, and most concerningly so do their representations of the world.
 
-What Happened to Trains, Files, and Musical Notes Could Happen Soon to the Definition of a Human Being
+In the book’s first introduced example of lock-in, Lanier recounts the history of the MIDI protocol. MIDI, he claims, represents music from the keyboardist’s perspective; as a set of discrete “key-up” “key-down” signals. The very structure of MIDI locks the user into “the tile mosaic world of the keyboardist”, and out of  “the watercolor world of the violin”. Here, I agree with Lanier; MIDI like other software representations, is a conceptual as well as technical system, it facilitates thought but also forces users into certain ways of thinking. 
 
+According to Lanier, “before MIDI, a musical note was a bottomless idea that transcended absolute definition.” This is where we diverge. Software is far from the only form of representation to shape thought or to encode a singular view of the world. Before MIDI, and alongside it, another dominant representation framed the expression of music. Modern staff notation encodes a rigid notion of pitch and time that enables clear communication between composers, musicians and nowadays machines, but inevitably frames music and creates conceptual boundaries. The stave discretises pitch and assumes western tuning. The very structure of staff notation forces the user into a western musical perspective. It cannot represent the swaying quarter tones of the oud or the continuous paths of the theremin.
 
+{% include figure.html src="/images/piano-piece-for-david-tudor-4.jpg" caption="\"Piano piece for David Tudor 4\" &mdash; La Monte Young" %}
 
-![](/images/piano-piece-for-david-tudor-4.jpg){:class="inline"}
+Modern staff notation’s representation of music is pervasive but not totalising. Beginning in the 1950s, composers such as John Cage have experimented with non-standard or graphic music manuscripts (see [*Notations* (1969)](https://monoskop.org/images/9/92/Cage_John_Notations.pdf) for more examples). These notations often reference aspects of the standard notation but employ textural and/or continuous representations of pitch and time. In the humanistic tradition, these manuscripts are informed by western music notation but escape its rigidity.
+They challenge the strictures of standard notation and offer alternative ways of representing music.
 
-The politics of technology affect the politics of society, especially as society becomes increasingly digitised.
-“We [technologists] tinker with your philosophy by direct manipulation of your cognitive experience… It takes only a tiny 
-group of engineers to create technology that can shape the entire future of human experience.”
+Can we do the same for software representations? or; *is there a substantive difference between software representations and graphical or other representations which makes them more susceptible to lock-in?*
 
+On one hand, it seems there is. Non-digital music need not pass through notation; the unscripted, extempore style of (most) jazz musicians is evidence of this. Digital instruments on the other hand, must funnel their very performance through a software representation and this is almost always MIDI. MIDI has proven extremely resilient to proposed alternatives and the more instruments, musicians and composition programs that support it the less likely it appears to be overthrown.
 
+With this in mind, it is easy to feel fatalistic about the state of software. But the other examples of lock-in in *You Are Not a Gadget* tell a different story. Lanier suggests hyperbolically that the software notion of the file will likely outlive current notions of nature or the concept of the photon. “The file is a set of philosophical ideas made into eternal flesh.” In contrast, we are already seeing the waning of the file representation in computing. Though files remain dominant in desktop computing, smart phones rarely include a file explorer by default and apps are likely to organise data for the user rather than being tools for the user to manipulate files.
+In another example, Lanier cites the UNIX operating system’s representation of software around discrete typing events “as if reality were a network of fast typists.” This has detrimental consequences for timing making UNIX “too brittle and clumsy” for making music. But although UNIX lives on there are many successful software representations that are used for making music. Live-coding is a broad church which thinks deeply about software representations of time and music.
 
-
-“Digital Reification: Lock-in Turns Philosophy into Reality “
-
-
-
-
-The dominance of discrete (digital) over continuous (analog) encodings.
+The internet seems like it should be an ideal example of lock-in, it is widely used much software relies on it. Despite this, Vint Cerf argues that the internet  cannot be regulated because digital technology can change and never stops changing.[^Stiegler2012]
 
 
 
-
-Vint Cerf argues that internet access cannot be subjected to law because digital technology is an artefact which can change – and which never stops changing.[^Stiegler2012]
-
-
-
-
-
+Software represents the world as well as acting in it. Its representations are necessarily incomplete; a mapping rather than the thing itself. As culture is increasingly digitised software representations become fore
+It is therefore important to understand the perspectives that these representations encode.
+Although software representations are resistant to change they are not immune to it.
+The representation of notes in MIDI and the representations of friendship in Facebook 
 
 Ironically, *You Are Not a Gadget* may have been one of the turning points in discourse that has left us where we are today.
 
 
-I am reminded of the open source social network *Diaspora* which seemed to offer refuge to refugees of oppressive mass-surveillance platforms. 
-Alternatively, Google made a long standing attempt to overthrow Facebook.
+
 
 ## Notes
 

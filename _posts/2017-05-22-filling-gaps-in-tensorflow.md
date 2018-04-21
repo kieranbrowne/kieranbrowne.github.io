@@ -3,7 +3,7 @@ title: Filling gaps in TensorFlow's Java api
 layout: post
 thumbnail: /images/clojure-tensorflow-thumb-green.jpg
 kurzgesagt: 
-tags: [clojure, tensorflow, java, interop]
+tags: [code, clojure, tensorflow, java, interop]
 ---
 
 TensorFlow's announcement of a Java api is great news for the clojure community. I wrote a post a couple of weeks ago that argued that TF's Java api [already provides everything that we need to do useful things](/research/clojure-tensorflow-interop/). This is mostly true, by leveraging interop we can easily get tensors flowing, use any of TensorFlow's many operations and do useful calculations with them. That said, if your plan is to use TensorFlow for machine learning, and I'm guessing this is most people, you'll probably regret the absense of the great optimizers that Python's TensorFlow api provides. Sure, you can build your own backpropagation out of TensorFlow operations but this becomes very tedious if your network is more than a few layers deep. So this week I had a go at implementing a functional gradient descent optimizer in Clojure/TensorFlow and I thought I'd share what I've learned.
@@ -55,7 +55,7 @@ Under the hood, we're interoping with TensorFlow via Java to build a graph repre
 
 A visualisation of the graph might look something like this.
 
-![Clojure TensorFlow Graph](/images/clojure-tensorflow-graph.png)
+{% include figure.html src="/images/clojure-tensorflow-graph.png" alt="Clojure TensorFlow Graph" %}
 
 Each node is a TensorFlow operation and each arrow (or edge) represents the use of a previous operation as an argument.
 
@@ -68,7 +68,7 @@ The process is actually fairly simple in the abstract.
 
 We need to find the path of TensorFlow operations between `error` and `weights`. 
 
-![Clojure TensorFlow Graph](/images/clojure-tensorflow-graph-derivative-path.png)
+{% include figure.html src="/images/clojure-tensorflow-graph-derivative-path.png" alt="Clojure TensorFlow Graph" %}
 
 In this example, the path of operations is:
 

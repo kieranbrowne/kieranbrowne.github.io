@@ -2,11 +2,16 @@
 title: Neural Networks in Carbon and Code
 layout: post
 thumbnail: /images/neurons.jpg
+tags:
+    - neural networks
+    - machine learning
+    - clojure
+    - code
 kurzgesagt: Artificial neural networks do not deal in symbolic transformation and representation. Instead their decisions emerge from the relative strengths of countless connections between simpler parts. Is it possible to make this complexity comprehensible to a person? And is it possible for a person to reach inside and manipulate a neural network without breaking it?
 excerpt: The artificial neural network is a powerful programming paradigm that has achieved some impressive feats in recent years. 
 ---
 
-![Artificial neuron diagram](/images/neurons.jpg)
+{% include figure.html src="/images/neurons.jpg" alt="Artificial neuron diagram" %}
 
 The artificial neural network is a powerful programming paradigm that has achieved some impressive feats in recent years. The algorithms in this style are based on an analogy to the information pathways in biological nervous systems like the brain. But how alike are artificial and biological neural networks? And what elements must be alike for the metaphor to hold? This is a big topic and I've only just scratched the surface, but if you're willing to brave my possible misinterpretations I'll share what I've learned so far.
 
@@ -20,7 +25,7 @@ In a neuron, informations flows in a single direction. Left to right in the imag
 Neurons have long tree-like branches called dendrites stretching outward from the cell body. Most of the cell's synapses are connected along these branches. The neuron's charge is the sum of all of the charges from the neurons upstream. A single neuron can have millions of synaptic connections with others.
 When the sum of inputs to a neuron reaches the threshold, a charge is released down its tail, called an axon. Finally there is another series of branches each ending in a small bulb called an axon terminal. These terminals connect to the body or dendrites of other neurons to form more synapses and so the flow of information continues.
 
-![Drawing of a neuron](/images/neuron.jpg)
+{% include figure.html src="/images/neuron.jpg" alt="Drawing of a neuron" %}
 
 
 ## Neurons in code
@@ -30,7 +35,7 @@ In the computational model of a neuron there is no need for the complex physical
 As such, a neuron is just a value resulting from its relations to other neurons. The diagram below shows the calculation of a single neuron value from it's upstream inputs. There are three inputs to this neuron connected via synapses of varying strengths. 
 We can think of the synapse strengths as coefficients which moderate the relevance of any upstream neurons.
 
-![Artificial neuron diagram](/images/artificial-neuron-diagram.jpg)
+{% include figure.html src="/images/artificial-neuron-diagram.jpg" alt="Artificial neuron diagram" %}
 
 Computational neurons are the sum of their connected inputs multiplied by their synaptic strength. As such, the example below is calculated as:
 
@@ -49,7 +54,7 @@ In biological neural networks the adjustment of connection is commonly attribute
 
 The diagram below shows the structure of a simple network of neurons which we're about to code.
 
-![Artificial neuron diagram](/images/artificial-neural-net-diagram.jpg)
+{% include figure.html src="/images/artificial-neural-net-diagram.jpg" alt="Artificial neuron diagram" %}
 
   
 ## Coding a neural network

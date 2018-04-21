@@ -5,27 +5,23 @@ permalink: /research/
 sidemenu: research
 ---
 
+<div id="machinelearning"></div>
+<div id="visualisation"></div>
+<div id="code"></div>
+
 <div class="grid posts">
   <div class="col-3 col-push-1 col-sm-0 col-sm-push-1 col-xs-0 col-xs-push-0">
     <ul class="side-menu">
-      {% for post in site.posts %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-          <!-- <div class="excerpt"> -->
-          <!--   {% capture var %}{{ post.excerpt | slice: 0,130 | strip_html }}...{% endcapture%} -->
-          <!--   {{var}} -->
-          <!-- </div> -->
-        </a>
-      </li>
-      {% endfor %}
+      <li><a href="#machinelearning"><b>Machine Learning</b></a></li>
+      <li><a href="#code"><b>Code</b></a></li>
+      <li><a href="#visualisation"><b>Visualisation</b></a></li>
     </ul>
   </div>
   <div class="col-8 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
     <div class="spacer-8"></div>
     <div class="works">
       {% for post in site.posts %}
-        <div class="work tile" >
+      <div class="work tile" data-tags="{{ post.tags | join: ','  | remove: " "}}">
           <a href="{{ site.baseurl }}{{ post.url }}"
            {% if post.url == page.url %}
            class="active"

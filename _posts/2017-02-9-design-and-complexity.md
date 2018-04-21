@@ -8,7 +8,7 @@ excerpt: Simplicity, essentiality and openness are three words used by the influ
 
 ## “simplicity, essentiality and openness.”
 
-![Radio inspired by Dieter Rams](/images/dieter-rams-inspired-radio.jpg)
+{% include figure.html src="/images/dieter-rams-inspired-radio.jpg" alt="Radio inspired by Dieter Rams" %}
 
 Simplicity, essentiality and openness are three words used by the influential german designer Dieter Rams to summarise his work. Rams was revolutionary in his resolve to simplify everyday objects through industrial design. He designed a number of technical devices (stereos, radios, calculators) with the aim of simplifying the interface to the end user without removing useful functions.
 
@@ -35,7 +35,7 @@ Google is not alone in this, of the many ways that machine learning is creeping 
 
 The other common solution for interactions with machine learning  is training by example. For example, Facebook’s “I don’t want to see this” option has a direct, visible effect on the selected post but will also be used to improve the algorithm which generates the feed. This too is hard to conceive of for the end user who is unable to directly compare the effect of this change in their future feed.
 
-![Simplistic sketch of Dieter Rams](/images/dieter-rams.jpg)
+{% include figure.html src="/images/dieter-rams.jpg" alt="Simplistic sketch of Dieter Rams" %}
 
 So, are we making good design? 
 We’ve concealed the complexity of neural nets that’s for sure. And we get the functionality and power of machine learning without any unsightly neurons and synapses. But, at the risk of overstretching my analogy, what remains is a radio without any controls.

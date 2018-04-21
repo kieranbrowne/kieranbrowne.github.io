@@ -4,35 +4,37 @@ layout: default
 
 <div class="grid posts">
   <div class="col-3 col-push-1 col-sm-11 col-xs-0 col-xs-push-0">
-    <ul class="side-menu">
-      {% for post in site.works reversed  %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}"
-           {% if post.url == page.url %}
-           class="active"
-           {% endif %}>
-          {{ post.title }}
-          <!-- <div class="excerpt"> -->
-          <!--   {% capture var %}{{ post.excerpt | slice: 0,130 | strip_html }}...{% endcapture%} -->
-          <!--   {{var}} -->
-          <!-- </div> -->
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
+    <!-- <ul class="side-menu"> -->
+    <!--   {% for post in site.works reversed  %} -->
+    <!--   <li> -->
+    <!--     <a href="{{ site.baseurl }}{{ post.url }}" -->
+    <!--        {% if post.url == page.url %} -->
+    <!--        class="active" -->
+    <!--        {% endif %}> -->
+    <!--       {{ post.title }} -->
+    <!--       <1!-- <div class="excerpt"> --1> -->
+    <!--       <1!--   {% capture var %}{{ post.excerpt | slice: 0,130 | strip_html }}...{% endcapture%} --1> -->
+    <!--       <1!--   {{var}} --1> -->
+    <!--       <1!-- </div> --1> -->
+    <!--     </a> -->
+    <!--   </li> -->
+    <!--   {% endfor %} -->
+    <!-- </ul> -->
   </div>
-  <div class="col-8 col-sm-12 col-sm-push-1 col-xs-12 col-xs-push-0">
+  <div class="col-8 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
     <div class="spacer-8"></div>
       <div class="works">
         {% for post in site.works reversed  %}
-          <div class="work tile" >
+          <div class="work tile" 
+               data-title="&lsquo;{{post.title}}&rsquo; ({{post.date | date: "%Y"}})">
             <a href="{{ site.baseurl }}{{ post.url }}"
              {% if post.url == page.url %}
              class="active"
              {% endif %}
              {% if post.thumbnail %}
              style="background-image: url({{post.thumbnail}});"
-             {% endif %} >
+             {% endif %} 
+             >
                 {{ post.title }}
             </a>
           </div>
