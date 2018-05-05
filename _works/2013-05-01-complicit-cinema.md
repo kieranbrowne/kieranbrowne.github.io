@@ -12,7 +12,7 @@ materials: EEG, Hitchcock scene, custom software
 As the scene progresses higher levels of brain activity are required for it to continue. The footage will stop or even reverse if the watcher 
 loses concentration. 
 
-![Hitchcock's Psycho shower scene](/images/complicit-cinema.jpg)
+{% include figure.html src="/images/complicit-cinema.jpg" %}
 
 ## Artist statement
 Hollywood's growing industry of violent cinema such as the multi-million dollar 
@@ -31,7 +31,7 @@ otherwise held by the progression of time. Within the installation, the scene
 will not play without an audience, nor will it continue without a focused mind 
 to consume it. 
 
-![Hitchcock's Psycho shower scene](/images/complicit-cinema-schematic.png)
+{% include figure.html src="/images/complicit-cinema-schematic.png" %}
 
 
 ## The effects on the viewer
