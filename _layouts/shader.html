@@ -7,12 +7,12 @@
 </head>
 <body>
   <script>
-  var myshader;
+  var s;
 
   function preload() {
-      myshader = loadShader(
-          "/glsl/{{page.vert}}",
-          "/glsl/{{page.frag}}"
+      s = loadShader(
+          "https://raw.githubusercontent.com/kieranbrowne/kieranbrowne.github.io/master/glsl/basic.vert",
+          "https://raw.githubusercontent.com/kieranbrowne/kieranbrowne.github.io/master/glsl/soft-bodies.frag"
               );
   }
 
@@ -21,10 +21,10 @@
   }
 
   function draw() {
-      myshader.setUniform('uResolution',[width,height]);
-      myshader.setUniform('uPixelDensity',pixelDensity());
-      myshader.setUniform('uTime',100+frameCount/40.0);
-      shader(myshader);
+      s.setUniform('uResolution',[width,height]);
+      s.setUniform('uPixelDensity',pixelDensity());
+      s.setUniform('uTime',100+frameCount/40.0);
+      shader(s);
       plane(); // drawing area
 
   }
