@@ -2,6 +2,8 @@
 layout: work
 title: Pixel Sorting Experiments
 thumbnail: /images/pixel-sort-thumbnail.jpg
+tags:
+    - new media
 ---
 
 A series of experiments arranging the pixels of one image to form another.

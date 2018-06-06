@@ -2,6 +2,8 @@
 layout: work
 title: The Other Side
 year: 2018
+tags:
+    - old media
 materials: Séance; prayer beads, wood, candles
 thumbnail: /images/seance-apparatus-diagram.jpg
 ---

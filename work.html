@@ -2,8 +2,17 @@
 layout: default
 ---
 
+<div id="newmedia"></div>
+<div id="oldmedia"></div>
+<div id="mixedmedia"></div>
+
 <div class="grid posts">
   <div class="col-3 col-push-1 col-sm-11 col-xs-0 col-xs-push-0">
+    <ul class="side-menu">
+      <li><a href="#newmedia"><b>New Media</b></a></li>
+      <li><a href="#oldmedia"><b>Old Media</b></a></li>
+      <li><a href="#mixedmedia"><b>Mixed Media</b></a></li>
+    </ul>
     <!-- <ul class="side-menu"> -->
     <!--   {% for post in site.works reversed  %} -->
     <!--   <li> -->
@@ -26,7 +35,9 @@ layout: default
       <div class="works">
         {% for post in site.works reversed  %}
           <div class="work tile" 
-               data-title="&lsquo;{{post.title}}&rsquo; ({{post.date | date: "%Y"}})">
+               data-title="&lsquo;{{post.title}}&rsquo; ({{post.date | date: "%Y"}})"
+               data-tags="{{ post.tags | join: ','  | remove: " "}}"
+               >
             <a href="{{ site.baseurl }}{{ post.url }}"
              {% if post.url == page.url %}
              class="active"

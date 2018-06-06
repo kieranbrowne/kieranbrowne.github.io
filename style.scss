@@ -543,9 +543,9 @@ h4 {
 @mixin filter($tag) {
 
   $tag: str-remove-whitespace($tag);
-  div##{$tag}:target + div + div + .posts .works ,
-  div##{$tag}:target + div + .posts .works ,
-  div##{$tag}:target + .posts .works {
+  div##{$tag}:target + div + div + .posts ,
+  div##{$tag}:target + div + .posts ,
+  div##{$tag}:target + .posts {
 
     // [data-tags*="#{$tag}"] {
     //   &:nth-of-type(2n) {
@@ -556,8 +556,14 @@ h4 {
     //   }
     // }
 
-    .tile:not([data-tags*="#{$tag}"]) {
+    .works .tile:not([data-tags*="#{$tag}"]) {
       display: none;
+    }
+
+    .side-menu {
+      a[href*="#{$tag}"] {
+        color: $highlight;
+      }
     }
   }
 }
@@ -565,6 +571,10 @@ h4 {
 @include filter("code");
 @include filter("visualisation");
 @include filter("machine learning");
+
+@include filter("newmedia");
+@include filter("oldmedia");
+@include filter("mixedmedia");
 
 
 a {

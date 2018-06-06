@@ -2,6 +2,8 @@
 layout: work
 title: Artificial Artists
 year: 2014 &ndash; 2016
+tags:
+    - mixed media
 materials: plywood, PCB, stepper motors, rubber belt, custom software
 thumbnail: /images/artificial-artists-thumbnail.jpg
 ---
