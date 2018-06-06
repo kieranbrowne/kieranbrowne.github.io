@@ -23,5 +23,5 @@ Comparisons between machine learning and magic are common even amongst experts a
 
 ### Performance
 
-The work will be performed live at the CHI conference in April 2018.
+The work was performed at the [CHI conference](https://chi2018.acm.org/) in April 2018.
 

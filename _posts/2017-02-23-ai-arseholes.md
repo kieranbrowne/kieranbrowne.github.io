@@ -33,11 +33,12 @@ Machine learning is not a new science, much of the underlying mathematics was wo
 
 Machine learning works by processing data to distill its patterns into a mathematical model. These algorithms can approximate arbitrary functions from data, even when the programmer is not conscious of the relationships therein.
 
-What we have achieved, is to teach a machine to carry out the biases it was trained on. Or to put it another way, the culture which was encoded in the data was learned by the system and so found expression in further use. 
+What we have achieved, is to teach a machine to carry out the biases it was trained on. Or to put it another way, the culture that is latent in the data is learned by the system and so finds expression. 
 
-There is another problem which arises from how we think about machines. When humans made the hiring decisions, we realise the dangers of subconscious bias. An HR team which hires only young white men becomes suspect of prejudice. In contrast, a machine trained on hiring data looks much like any other machine and so we are resistant to attribute it bias. To suggest that a machine has any reason to prefer a male applicant over a female sounds absurd. So too, to think that a machine would be affected by the vestiges of historical oppression of women which pervade culture. And yet, the machine  *is* encultured. It has learned, and so perpetuates the biases present in human data. 
+A problem which arises from the way we think about machines as cold, logical and objective. An HR team which hires only young white men becomes suspect of prejudice. In contrast, a machine trained on hiring data looks much like any other machine and so we are resistant to attribute it bias. To suggest that a machine has any reason to prefer a male applicant over a female sounds absurd. So too, to think that a machine would be affected by the vestiges of historical oppression of women. And yet, the machines trained on human data *are* encultured. As AI systems find use in a growing range of sensitive applications, machines exhibiting racial and gender biases have regularly appeared.[^Angwin2016]<sup>,</sup>[^Insta]<sup>,</sup>[^Twitter]
 
-The dominant culture is largely transparent to those who inhabit it. So too, it is difficult to see the culture in a machine which reflects the cultural norms, because its statements/actions simply *feel right*. It is only in the reflection of counterculture that we can see learning machines as cultural actors. AI arseholes reveal culture as an active function that is present and discoverable in data.
+
+The dominant culture is largely transparent to those who inhabit it. So too, it is difficult to see the influence of culture in a machine that reflects the cultural norms. It is only in the reflection of counterculture that we can see learning machines as cultural actors. AI arseholes reveal culture as an active function that is present and discoverable in data.
 
 
 
@@ -53,4 +54,7 @@ The dominant culture is largely transparent to those who inhabit it. So too, it 
 
 [^Rosenblatt1957]: Rosenblatt, Frank. *The perceptron, a perceiving and recognizing automaton Project Para.* Cornell Aeronautical Laboratory, 1957. [PDF](https://blogs.umass.edu/brain-wars/files/2016/03/rosenblatt-1957.pdf)
 [^Minsky1969]: Minsky, Marvin, and Seymour Papert. "Perceptrons: an introduction to computational geometry." (1969). 
-[^Williams1986]: Williams, D. R. G. H. R., and Geoffrey Hinton. "Learning representations by back-propagating errors." Nature 323, no. 6088 (1986): 533-538.
+[^Williams1986]: Williams, D. R. G. H. R., and Geoffrey Hinton. "Learning representations by back-propagating errors." *Nature* 323, no. 6088 (1986): 533-538.
+[^Angwin2016]: [Angwin, Julia, Jeff Larson, Surya Mattu, and Lauren Kirchner. "Machine bias: There’s software used across the country to predict future criminals. and it’s biased against blacks." *ProPublica*, May 23 (2016).](https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing)
+[^Insta]:[kharyrandolph. Instagram. 18 April 2017](https://www.instagram.com/p/BTB2xC7A32c/)
+[^Twitter]:[Alex Shams. Twitter. 28 November 2017](https://twitter.com/seyyedreza/status/935291317252493312)

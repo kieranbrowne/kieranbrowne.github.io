@@ -6,8 +6,11 @@ materials: plywood, PCB, stepper motors, rubber belt, custom software
 thumbnail: /images/artificial-artists-thumbnail.jpg
 ---
 
+{% include figure.html src="/images/drawing-machine.jpg" %}
+
 *Artificial Artists* is a series of art machines that contribute to the creation of visual "ideas" as well as the production of images. 
 The machines vary in style and each was created to express a unique persona. The aim with the works is to push the limits of non-human artistry.
+
 
 {% include figure.html src="/images/ava-1.jpg" caption="\"Fan art machine\" searches the web for famous faces and renders renders them in charcoal with a mixture of flowing lines crosshatching." %}
 

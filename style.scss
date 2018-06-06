@@ -183,6 +183,7 @@ p {
     position: absolute;
     opacity: 0;
     transition: opacity .3s;
+    pointer-events: none;
   }
 
   a {
@@ -513,6 +514,23 @@ h4 {
         box-sizing: content-box;
     }
 }
+
+.bio {
+  h2 {
+    @include baseline(14px,16px,80px);
+    font-weight: 600;
+    color: #55555f;
+    letter-spacing: .7px;
+  }
+
+  p {
+    @include baseline(14px,20px,40px);
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+
 
 @function str-remove-whitespace($str) {
   @while (str-index($str, ' ') != null) {
