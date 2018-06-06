@@ -64,6 +64,9 @@ collections:
     slides:
         output: true
         permalink: /slides/:title/
+    shaders:
+        output: true
+        permalink: /shader/:title/
     vis:
         output: true
         permalink: /vis/:title/

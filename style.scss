@@ -367,6 +367,13 @@ p img {
   }
 }
 
+iframe  {
+  margin: 3rem;
+  box-sizing: border-box;
+  width: col-width($grid,8,0);
+  height: col-width($grid,5,0);
+}
+
 figure {
   margin-top: 3rem;
   img {
@@ -380,6 +387,7 @@ figure {
     font-style: italic;
   }
 }
+
 
 @media screen and (min-width:800px) {
   p img:not(.inline) {

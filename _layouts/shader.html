@@ -1,0 +1,33 @@
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <style>
+  body { margin: 0; overflow: hidden; }
+  </style>
+</head>
+<body>
+  <script>
+  var myshader;
+
+  function preload() {
+      myshader = loadShader(
+          "/glsl/{{page.vert}}",
+          "/glsl/{{page.frag}}"
+              );
+  }
+
+  function setup(){
+      createCanvas(windowWidth, windowHeight, WEBGL);
+  }
+
+  function draw() {
+      myshader.setUniform('uResolution',[width,height]);
+      myshader.setUniform('uPixelDensity',pixelDensity());
+      myshader.setUniform('uTime',100+frameCount/40.0);
+      shader(myshader);
+      plane(); // drawing area
+
+  }
+  </script>
+</body>
+</html>
