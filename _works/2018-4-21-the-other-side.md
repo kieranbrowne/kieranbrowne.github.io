@@ -8,6 +8,8 @@ materials: Séance; prayer beads, wood, candles
 thumbnail: /images/seance-apparatus-diagram.jpg
 ---
 
+{% include yt_embed.html id="1Y8MqnXYLQU" %}
+
 *The Other Side* is a ritual performance of the mathematics of an artificial neural network with pre-digital technology. The performance references the rites and nomenclature of the modern spiritualist movement whose devotees held gatherings and séances across the western world around the turn of the 20th century hoping to communicate with spirits of the dead. By manually performing the neural network, the work frames deep learning as communion with an emergent intelligence, presenting black-box neural networks as divination and questioning contemporary narratives of machine learning as artificial intelligence.
 
 The ritual is enacted on a large analog computer made of several concentric discs, a string of wooden beads and a book which holds the weights and biases of the network.
