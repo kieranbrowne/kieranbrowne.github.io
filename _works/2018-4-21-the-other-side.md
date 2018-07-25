@@ -5,7 +5,7 @@ year: 2018
 tags:
     - old media
 materials: Séance; prayer beads, wood, candles
-thumbnail: /images/seance-shot.jpg
+thumbnail: /images/seance-thumbnail.jpg
 ---
 
 {% include yt_embed.html id="1Y8MqnXYLQU" %}

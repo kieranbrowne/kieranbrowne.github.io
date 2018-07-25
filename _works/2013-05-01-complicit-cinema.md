@@ -10,12 +10,12 @@ year: 2013
 materials: EEG, Hitchcock scene, custom software
 ---
 
+{% include figure.html src="/images/complicit-cinema.jpg" %}
 
 *Complicit Cinema* is an experimental cinema that requires focussed attention from the viewer. An electroencephalogram (EEG) is used to measure the viewer's brain activity and this allows the scene to move forward.
 As the scene progresses higher levels of brain activity are required for it to continue. The footage will stop or even reverse if the watcher 
 loses concentration. 
 
-{% include figure.html src="/images/complicit-cinema.jpg" %}
 
 ## Artist statement
 Hollywood's growing industry of violent cinema such as the multi-million dollar 
@@ -34,7 +34,8 @@ otherwise held by the progression of time. Within the installation, the scene
 will not play without an audience, nor will it continue without a focused mind 
 to consume it. 
 
-{% include figure.html src="/images/complicit-cinema-schematic.png" %}
+{% include figure.html src="/images/complicit-cinema-3.jpg" %}
+
 
 
 ## The effects on the viewer
@@ -46,3 +47,4 @@ enjoyment of the content. The mental energy required to continue the scene
 increases with the scene itself. It can take a viewer some time to progress the 
 scene to actual violence. And so, it can feel like an achievement to make the 
 killer's knife meet the victim's skin.
+
