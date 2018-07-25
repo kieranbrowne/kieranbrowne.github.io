@@ -4,8 +4,9 @@ title: Artificial Artists
 year: 2014 &ndash; 2016
 tags:
     - mixed media
+    - old media
 materials: plywood, PCB, stepper motors, rubber belt, custom software
-thumbnail: /images/artificial-artists-thumbnail.jpg
+thumbnail: /images/drawing-machine.jpg
 ---
 
 {% include figure.html src="/images/drawing-machine.jpg" %}

@@ -150,16 +150,16 @@ p {
   display: inline-block;
   position: relative;
 
-  animation-name: slide-in;
-  animation-duration: 1s;
-  animation-delay: 1s; 
-  animation-fill-mode: both;
+  // animation-name: slide-in;
+  // animation-duration: 1s;
+  // animation-delay: 1s; 
+  // animation-fill-mode: both;
 
-  @for $i from 1 through 10 {
-    &:nth-of-type(#{$i}) {
-      animation-delay: 1 - ($i * .1s); 
-    }
-  }
+  // @for $i from 1 through 10 {
+  //   &:nth-of-type(#{$i}) {
+  //     animation-delay: 1 - ($i * .1s); 
+  //   }
+  // }
 
   &:hover {
     a {

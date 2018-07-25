@@ -4,7 +4,8 @@ title: Complicit Cinema
 hero: /images/complicit-cinema.jpg
 thumbnail: /images/complicit-cinema-thumbnail.jpg
 tags: 
-    - mixed media
+    - new media
+    - old media
 year: 2013
 materials: EEG, Hitchcock scene, custom software
 ---
