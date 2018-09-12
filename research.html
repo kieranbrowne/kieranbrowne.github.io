@@ -19,23 +19,17 @@ sidemenu: research
   </div>
   <div class="col-8 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
     <div class="spacer-8"></div>
-    <div class="works">
+    <div class="blog-posts">
       {% for post in site.posts %}
-      <div class="work tile" data-tags="{{ post.tags | join: ','  | remove: " "}}">
-          <a href="{{ site.baseurl }}{{ post.url }}"
-           {% if post.url == page.url %}
-           class="active"
-           {% endif %}
-           {% if post.thumbnail %}
-           style="background-image: url({{post.thumbnail}});"
-           {% endif %} >
+      <div class="post" data-tags="{{ post.tags | join: ','  | remove: " "}}">
+          <a href="{{ site.baseurl }}{{ post.url }}" >
+            <div class="title">
+              {{ post.title }}
+            </div>
+            <div class="year">
+              {{ post.date | date: "%b %Y" }}
+            </div>
           </a>
-          <div class="title">
-            {{ post.title }}
-          </div>
-          <div class="year">
-            {{ post.date | date: "%Y" }}
-          </div>
         </div>
       {% endfor %}
     </div>
