@@ -601,8 +601,35 @@ h4 {
     }
   }
 }
+@mixin filter($tag) {
 
-@include filter("code");
+  $tag: str-remove-whitespace($tag);
+  div##{$tag}:target + div + div + .posts ,
+  div##{$tag}:target + div + .posts ,
+  div##{$tag}:target + .posts {
+
+    // [data-tags*="#{$tag}"] {
+    //   &:nth-of-type(2n) {
+    //     margin-right: map-get($grid,gutter);
+    //   }
+    //   &:nth-of-type(2n+1) {
+    //     margin-right: 0;
+    //   }
+    // }
+
+    .post:not([data-tags*="#{$tag}"]) {
+      opacity: .4;
+    }
+
+    .side-menu {
+      a[href*="#{$tag}"] {
+        color: $highlight;
+      }
+    }
+  }
+}
+
+@include filter("newmedia");
 @include filter("visualisation");
 @include filter("machine learning");
 

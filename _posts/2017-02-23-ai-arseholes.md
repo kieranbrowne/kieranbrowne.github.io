@@ -4,6 +4,7 @@ layout: post
 tags:
     - artificial intelligence
     - neural networks
+    - machine learning
 thumbnail: /images/tay-tweets-thumbnail.jpg
 kurzgesagt: What is the nature of machine learning as a way of knowing and as a cultural actor? How can we peer inside these systems to understand and manipulate them?
 ---

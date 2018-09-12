@@ -5,6 +5,8 @@ kurzgesagt: TODO
 course: humn1001
 week: 2
 thumbnail: /images/piano-piece-for-david-tudor-4.jpg
+tags:
+  - new media
 ---
 
 Jaron Lanier’s manifesto cum [red scare](https://en.wikipedia.org/wiki/Red_Scare) paranoia *You Are Not a Gadget* (2010) challenges the structures and politics of “Web 2.0” era digital culture. Not all of the ideas in the book have aged well and some likely never made sense, but his examination of crystallisation of ideas through software representations is still relevant and its lessons are yet to be learned. In this post I want to look at Lanier’s analysis of software representation as philosophy and challenge his suggestion that these metaphors are “locked in”.
