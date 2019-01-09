@@ -1,0 +1,116 @@
+</section>
+<section class="slide-timeline" style="height: 100%">
+<h2>{{include.title}}</h2>
+
+<div id="{{include.drawingid}}" style="height: 100%; position: absolute; top: 0;"></div>
+
+<script>
+(function () {
+var ns = 'http://www.w3.org/2000/svg'
+var div = document.getElementById('{{include.drawingid}}') 
+var svg = document.createElementNS(ns, 'svg')
+svg.setAttributeNS(null, 'width', '960')
+svg.setAttributeNS(null, 'height', '700')
+div.appendChild(svg)
+
+// timeline
+var tl = document.createElementNS(ns, 'line')
+tl.setAttributeNS(null, 'x1', "0%")
+tl.setAttributeNS(null, 'y1', "50%")
+tl.setAttributeNS(null, 'x2', "100%")
+tl.setAttributeNS(null, 'y2', "50%")
+tl.setAttributeNS(null, 'style', "stroke: #000; stroke-width: 3;")
+svg.appendChild(tl)
+
+let rescale = function (x, a, b, c, d) {
+  return (x-a)/(b-a)*d +c;
+}
+
+let yrtopt = function (x) {
+  return rescale(x,{{include.startyear}},{{include.endyear}},60,840);
+}
+
+let path = function (a,b, color="#000", arrow=false) {
+  let x1 = yrtopt(a);
+  let x2 = yrtopt(b);
+  let y = 350 - (x2 - x1)/3
+
+  var p = document.createElementNS(ns, 'path')
+  p.setAttributeNS(null, 'd', "M"+x1+",350 C"+x1+","+y+" "+x2+","+y+" "+x2+",350")
+  p.setAttributeNS(null, 'stroke', color)
+  p.setAttributeNS(null, 'fill', 'none')
+  p.setAttributeNS(null, 'stroke-width', 3)
+  svg.appendChild(p)
+
+  if(arrow) {
+    var p = document.createElementNS(ns, 'polygon')
+    p.setAttributeNS(null, 'points', `${x1},340 ${x1-1},328 ${x1+6},330`)
+    p.setAttributeNS(null, 'stroke', color)
+    p.setAttributeNS(null, 'fill', color)
+    p.setAttributeNS(null, 'stroke-width', 3)
+    svg.appendChild(p)
+  }
+}
+
+let circle = function (x,y, opacity=1, color="#000") {
+  var c = document.createElementNS(ns, 'circle')
+  c.setAttributeNS(null, 'cx', x)
+  c.setAttributeNS(null, 'cy', y)
+  c.setAttributeNS(null, 'r', 12)
+  c.setAttributeNS(null, 'fill', '#fff')
+  c.setAttributeNS(null, 'stroke', color)
+  c.setAttributeNS(null, 'stroke-width', '3')
+  c.setAttributeNS(null, 'style', 'opacity: '+opacity)
+
+  svg.appendChild(c)
+}
+
+let uncertain = function (x,y) {
+  circle(x-12,y,.2)
+  circle(x+12,y,.2)
+  circle(x-8,y,.2)
+  circle(x+8,y,.2)
+  circle(x-4,y,.2)
+  circle(x+4,y,.2)
+  circle(x,y,.2)
+}
+
+let text = function(x, y, str, style, rotate=false) {
+  var t = document.createElementNS(ns, 'text')
+  t.setAttributeNS(null, 'x', x)
+  t.setAttributeNS(null, 'y', y)
+  t.setAttributeNS(null, 'class', 'null')
+  t.setAttributeNS(null, 'style', style)
+  if(rotate)
+    t.setAttributeNS(null, 'transform', `rotate(30 ${x}, ${y})`)
+  t.innerHTML = str;
+  svg.appendChild(t)
+}
+
+
+let mark = function (obj) {
+  let x = yrtopt(obj.year);
+  // time point
+  if(obj.uncertain)
+    uncertain(x,350);
+  else circle(x, 350, 1, obj.color);
+  console.log(obj.color)
+  // year
+  if(!obj.notime)
+  text(x-30, 390, (obj.uncertain?"c.":"")+obj.year.toString(), 'font-size: 26px;font-weight: 400;');
+  text(x-3, 410, obj.discovery, null, true);
+}
+
+let times = {{include.data}};
+
+
+// connections
+let paths = {{include.paths}};
+paths.map(x=>{path(x.a,x.b, x.color, true)})
+
+// points
+times.map(mark)
+
+
+})();
+</script>

@@ -144,7 +144,7 @@ p {
 }
 .post {
   .title {
-    @include baseline(1.1rem,0rem,2rem);
+    @include baseline(1.1rem,2rem,2rem);
     color: rgb(20,20,20);
     font-weight: 500;
     padding-right: 1rem;
@@ -874,27 +874,22 @@ footer {
     > section { 
       padding: 0; 
 
-      &.black {
-        background: black;
-        h2, h3, p {
+      &.slide-background {
+        a, h2, h3, p {
           color: white;
         }
-      }
-      &.white {
-        background: white;
-      }
-      &.tall {
-        height: 100%;
       }
     }
 
     h2 {
-      @include baseline(3rem,3rem,4rem);
+      @include baseline(3rem,3rem,8rem);
       max-width: 80%;
       margin-left: auto;
       margin-right: auto;
-      font-weight: 900;
+      font-weight: 400;
       color: rgb(30,38,50);
+      letter-spacing: .6px;
+      text-decoration: underline;
     }
 
     h3 {
@@ -911,11 +906,18 @@ footer {
     blockquote ,
     p {
       @include baseline(1.5rem,2rem, 4rem);
-      text-align: left;
-      max-width: 30em;
+      max-width: 80%;
       margin-left: auto;
-      color: rgb(30,38,50);
       margin-right: auto;
+      color: rgb(30,38,50);
+      font-weight: 300;
+      letter-spacing: .6px;
+      b {
+        font-weight: 500;
+      }
+    }
+    li {
+      @include baseline(1.5rem,1.8rem, 2rem);
     }
 
     blockquote {
@@ -948,7 +950,8 @@ footer {
       }
     }
     a {
-      color: $highlight;
+      //color: $highlight;
+      text-decoration: underline;
     }
 
     iframe {
@@ -958,6 +961,38 @@ footer {
   }
 }
 
+.slide-citation {
+  position: absolute;
+  bottom: 0; 
+  left: 10%;
+  right: 10%;
+
+  a {
+    display: inline-block;
+    @include baseline(1.3rem,2.5rem,5rem,4rem);
+  }
+}
+
+.slide-timeline ,
+.slide-background ,
+.slide-standard {
+  text-align: left;
+  h2 {
+    @include baseline(1.3rem,2.5rem,5rem);
+    font-weight: 100;
+  }
+}
+.reveal .slide-large-quote {
+  h2 {
+    text-decoration: none;
+  }
+}
+
 .footnotes ol li p a { vertical-align: top; }
+
+sup {
+  // don't spoil baseline
+  line-height: .8em;
+}
 
 @import "highlights";
