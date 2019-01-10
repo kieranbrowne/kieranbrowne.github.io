@@ -73,6 +73,7 @@ paths='[{a: 1805, b: 1958, color: "#f00"}, {a: 1676, b:1986, color: "#f00"}]' %}
 data='[ {year:1676, discovery:"Leibniz Chain Rule", color: "#f00"}, {year:1805, discovery:"Method of Least Squares", color: "#f00"}, {year:1875, discovery:"Logistic Function", color: "#f00"}, {year:1943, discovery:"McCulloch-Pitts Neuron"}, {year:1958, discovery:"Rosenblatt creates perceptron", notime: true}, {year:1969, discovery:"Minsky & Papert publish Perceptrons", notime: true}, {year:1980, discovery:"Logistic function introduced", uncertain: true, notime: true}, {year:1986, discovery:"Backpropagation popularised"} ]' 
 paths='[{a: 1805, b: 1958, color: "#f00"}, {a: 1676, b:1986, color: "#f00"}, {a: 1875, b:1980, color: "#f00"}]' %}
 
+{% include slide/background.html image="/images/time.png" title="" bgsize="contain" %}
 
 {% include slide/background.html image="https://pbs.twimg.com/media/DARmL4KXYAAj0td.jpg" title="" style="text-align: center;" %}
 
