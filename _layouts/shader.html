@@ -4,6 +4,7 @@
   <style>
   body { margin: 0; overflow: hidden; }
   </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
   <script>
@@ -18,11 +19,12 @@
 
   function setup(){
       createCanvas(windowWidth, windowHeight, WEBGL);
+      pixelDensity(1);
   }
 
   function draw() {
       s.setUniform('uResolution',[width,height]);
-      s.setUniform('uPixelDensity',2);
+      s.setUniform('uPixelDensity',1);
       s.setUniform('uTime',100+frameCount/40.0);
       shader(s);
       quad(-1,-1, 1,-1, 1,1, -1, 1); // drawing area

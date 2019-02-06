@@ -248,6 +248,10 @@ p {
 
 .tags {
 
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
   list-style: none;
   padding-left: 0;
   @include baseline(0.9rem,1.5rem,2rem);
@@ -514,6 +518,7 @@ h4 {
 .date {
   @include baseline(1.0rem,2rem,4rem,2rem);
   @extend %article-content;
+  text-align: center;
 }
 
 #kurzgesagt {
@@ -993,6 +998,10 @@ footer {
 sup {
   // don't spoil baseline
   line-height: .8em;
+}
+
+.blend-multiply {
+  mix-blend-mode: multiply;
 }
 
 @import "highlights";
