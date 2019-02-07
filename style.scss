@@ -1004,4 +1004,11 @@ sup {
   mix-blend-mode: multiply;
 }
 
+.sideline {
+  display: block;
+  padding-left: 2rem;
+  border-left: 2px solid $highlight;
+  font-family: monospace;
+}
+
 @import "highlights";
