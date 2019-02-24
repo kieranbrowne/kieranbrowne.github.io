@@ -67,6 +67,9 @@ collections:
     shaders:
         output: true
         permalink: /shader/:title/
+    sketches:
+        output: true
+        permalink: /sketch/:title/
     vis:
         output: true
         permalink: /vis/:title/
