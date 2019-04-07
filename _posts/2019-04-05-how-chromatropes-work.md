@@ -85,7 +85,7 @@ Perhaps the simplest effect that can be achieved with a chromatrope can be seen 
 </svg>
 
 
-By moving the position of points out of sync slightly, some interesting cross-rhythms are produced extending the percieved period of the animation.
+By moving the position of points out of sync slightly, some interesting cross-rhythms are produced, extending the percieved period of the animation.
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
   <defs>
@@ -161,7 +161,7 @@ Alternatively, by tapering these lines towards the centre the effect can be made
   <g class="g2"><circle class="slide-b" cx="0" cy="0" r="200" fill="black" mask="url(#tapered-twisted-star-mask)" /></g>
 </svg>
 
-Reciprocal (back/forth) motion can be produced simply by painting one slide with a continuous ocillating pattern and the other with a spoke form.
+Reciprocal (back/forth) motion can be produced simply by painting one slide with a continuous oscillating pattern and the other with a spoke form.
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
   <defs>
@@ -188,7 +188,7 @@ Again by playing with the frequency of the two forms some interesting cross rhyt
   <g class="g2"><circle class="slide-b" cx="0" cy="0" r="200" fill="black" mask="url(#inoutaround-mask-c)" /></g>
 </svg>
 
-It is possible to produce reciprocal motion with two continuous oscillating lines, but flashes of the will appear periodically when the two forms align.
+It is possible to produce reciprocal motion with two continuous oscillating lines, but flashes will appear periodically when the two forms align.
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="slow">
   <defs>
