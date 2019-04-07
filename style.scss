@@ -546,6 +546,9 @@ h4 {
     blockquote {
       text-align: center;
     }
+    a {
+      text-decoration: underline;
+    }
 }
 .main {
     position: relative;
@@ -783,6 +786,15 @@ footer {
     margin: 0;
     width: 100%;
     height: 100%;
+  }
+  &.square {
+    padding-bottom: 100%;
+  }
+  &.small {
+    max-width: 500px;
+    padding-bottom: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

@@ -269,7 +269,7 @@ Most chromatropes combine many simple features to produce more complex visual ef
 
 It still blows my mind that such a simple mechanism can produce these effects. I can only imagine what it would have been like to see an original chromatrope at the turn of the nineteenth century. 
 
-You can read more about chromatropes at [the Museum of Applied Arts & Sciences blog](https://maas.museum/inside-the-collection/2011/01/04/the-amazing-pre-history-of-cinema/), or see more of my digital chromatropes [here]().
+You can read more about chromatropes at [the Museum of Applied Arts & Sciences blog](https://maas.museum/inside-the-collection/2011/01/04/the-amazing-pre-history-of-cinema/), or see more of my digital chromatropes [here](/research/making-old-media-new).
 
 
 ## Notes
