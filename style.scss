@@ -582,9 +582,7 @@ h4 {
 @mixin filter($tag) {
 
   $tag: str-remove-whitespace($tag);
-  div##{$tag}:target + div + div + .posts ,
-  div##{$tag}:target + div + .posts ,
-  div##{$tag}:target + .posts {
+  div##{$tag}:target ~ .posts {
 
     // [data-tags*="#{$tag}"] {
     //   &:nth-of-type(2n) {
@@ -609,9 +607,7 @@ h4 {
 @mixin filter($tag) {
 
   $tag: str-remove-whitespace($tag);
-  div##{$tag}:target + div + div + .posts ,
-  div##{$tag}:target + div + .posts ,
-  div##{$tag}:target + .posts {
+  div##{$tag}:target ~ .posts {
 
     // [data-tags*="#{$tag}"] {
     //   &:nth-of-type(2n) {
