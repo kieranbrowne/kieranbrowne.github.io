@@ -276,7 +276,7 @@ You can read more about chromatropes at [the Museum of Applied Arts & Sciences b
 
 [^encyclopedia]: Robinson, David, Stephen Herbert, and Richard Crangle, eds. *Encyclopaedia of the magic lantern.* Twayne Publishers, 2001. p 67.
 [^magicimages]: Crompton, Dennis, David Henry, and Stephen Herbert. Magic images: the art of hand-painted and photographic lantern slides. The Magic Lantern Society of Great Britain, 1990. p 82.
-[^colour]: Readers with an eye for etymology may be wondering why the examples above are colourless. Achromatic chromatropes were made, although they were rare. This post presents the building blocks of chromatropic effects in black and white because they are easier to understand. For some examples of coloured chromatropes see [my other page on this]().
+[^colour]: Readers with an eye for etymology may be wondering why the examples above are colourless. Achromatic chromatropes were made, although they were rare. This post presents the building blocks of chromatropic effects in black and white because they are easier to understand. For some examples of coloured chromatropes see [my other page on this](/research/making-old-media-new/).
 [^lanternamagica]: Mannoni, Laurent, and Donata Pesenti Campagnoni, eds. *Lanterna magica e film dipinto: 400 anni di cinema.* “Il” Castoro, 2010.
 
 <script>
