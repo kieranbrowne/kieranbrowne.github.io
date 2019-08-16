@@ -23,7 +23,7 @@ Reading aloud from a book, one member of the séance instructs the others to rot
 
 ### Motivation
 
-Comparisons between machine learning and magic are common even amongst experts and practitioners. Although the mathematics of neural networks are well defined, the models they produce are invariably complex and indeciferable. They work, but it is difficult to explain why or how. When used in this way, deep learning is a form of divination, an arcane set of steps that delivers answers without explanations. Without explanation, to trust the network is an act of faith.
+Comparisons between machine learning and magic are common even amongst experts and practitioners. Although the mathematics of neural networks are well defined, the models they produce are invariably complex and indecipherable. They work, but it is difficult to explain why or how. When used in this way, deep learning is a form of divination, an arcane set of steps that delivers answers without explanations. Without explanation, to trust the network is an act of faith.
 
 ### Performance
 
