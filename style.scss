@@ -7,18 +7,20 @@
 
 
 
-$white: darken(rgb(252,252,250),3%);
+$white: darken(rgb(252,252,250),0%);
 $white: white;
 $dark-grey: rgb(85,85,95);
+$dark-grey: rgb(15,15,15);
 $body-font: 'Vollkorn', Georgia, serif;
 // $bodyFont: $helvetica;
 $mono-font: 'PT Mono', sans-serif;
 $ultra-blue: #5F64F5;
 $highlight: $ultra-blue;
 $highlight: #7788ff;
+$highlight: $dark-grey;
 $border: $highlight;
 $header-height: 3rem;
-$mid-text-grey: #aab;
+$mid-text-grey: $dark-grey;
 
 
 $phi: 1.618;
@@ -64,7 +66,7 @@ $xs-grid: (
 
 body {
   background: $white;
-  background: rgb(214,215,218);
+  //background: rgb(214,215,218);
   // font-family: $body-font;
   font-family: $helveticaNeue;
   color: $darkGray;
@@ -487,10 +489,10 @@ ul {
 h1:not(.site-title) {
   // @include baseline($baseline*1.8,$baseline*2,$baseline*2);
   // @include baseline(28px,$baseline*4,$baseline*5, 0 ,1.3);
-  @include baseline(3rem,3rem,6rem);
+  @include baseline(2rem,3rem,6rem);
   font-weight: 800;
   letter-spacing: -.9px;
-  text-align: center;
+  //text-align: center;
 }
 
 h2 {
@@ -517,8 +519,8 @@ h4 {
 
 .date {
   @include baseline(1.0rem,2rem,4rem,2rem);
-  @extend %article-content;
-  text-align: center;
+  //@extend %article-content;
+  //text-align: center;
 }
 
 #kurzgesagt {
@@ -539,7 +541,7 @@ h4 {
 .content {
     position: relative;
     p, ol, ul, h2, h3, h4, h5 {
-      @extend %article-content;
+      //@extend %article-content;
       box-sizing: content-box;
         max-width: 35rem;
     }
@@ -561,7 +563,7 @@ h4 {
   h2 {
     @include baseline(14px,16px,80px);
     font-weight: 600;
-    color: #55555f;
+    //color: #55555f;
     letter-spacing: .7px;
   }
 
@@ -602,7 +604,8 @@ h4 {
 
     .side-menu {
       a[href*="#{$tag}"] {
-        color: $highlight;
+        //color: $highlight;
+	background:yellow;
       }
     }
   }
@@ -627,7 +630,8 @@ h4 {
 
     .side-menu {
       a[href*="#{$tag}"] {
-        color: $highlight;
+        //color: $highlight;
+	background:yellow;
       }
     }
   }
@@ -654,6 +658,7 @@ a {
   &.active ,
   &:hover {
     color: $highlight;
+    background:yellow;
     // transform: scale(0.86026) skew(-30deg) rotate(30deg,0deg);
     // transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
     // transform: rotateX(20deg) rotateY(-1deg) rotateZ(-04.5deg);
@@ -759,10 +764,14 @@ footer {
 }
 
 .site-title {
-  @include baseline(14px,$baseline,$baseline*10);
+  @include baseline(39px,$baseline*6,$baseline*10);
   // color: $highlight;
   font-weight: bold;
   letter-spacing: -.2px;
+
+  span:hover {
+    background:yellow;
+  }
 }
 
 .canvas-crop {
@@ -863,6 +872,20 @@ footer {
     flex-direction: column-reverse;
   }
 
+h1:not(.site-title) {
+  // @include baseline($baseline*1.8,$baseline*2,$baseline*2);
+  // @include baseline(28px,$baseline*4,$baseline*5, 0 ,1.3);
+  text-align: center;
+}
+
+.side-menu {
+  @include baseline(14px,$baseline*3,$baseline*5);
+}
+
+.side-menu li {
+  margin-right: 2em;
+  display: inline-block;
+}
 }
 
 ::-moz-selection { /* Code for Firefox */

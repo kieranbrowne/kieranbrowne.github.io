@@ -31,62 +31,26 @@
     <header>
       <div class="grid">
         <div class="col-3 col-push-1 col-sm-11 col-xs-push-0">
-          <a href="/"><h1 class="site-title">Kieran Browne</h1></a>
+          <a href="/"><h1 class="site-title"><span>Kieran<br>Browne</span></h1></a>
+	  <ul class="side-menu">
+		  <li><a href="/work">Work</a><br></li>
+		  <li><a href="/research">Research</a><br></li>
+		  <li><a href="/bio">Bio</a><br></li>
+	  </ul>
+	  <ul class="side-menu">
+		  <li><a href="//www.instagram.com/kieran_browne_"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+		  <li><a href="//twitter.com/kieran_browne_"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+		  <li><a href="//www.github.com/kieranbrowne"><i class="fa fa-github" aria-hidden="true"></i></a><br></li>
+	  </ul>
         </div>
-        <div class="col-7 col-sm-10 col-sm-push-1 col-xs-push-0 nav">
-          <a href="/work"
-             {% if page.url == "/work/" or page.layout == "work" %}
-             class="active"
-             {% endif %}>
-            Work</a>
-          <a href="/bio"
-             {% if page.url == "/bio/" %}
-             class="active"
-             {% endif %}>
-            Bio</a>
-          <a href="/research"
-             {% if page.url == "/research/" or page.layout == "post" %}
-             class="active"
-             {% endif %}>
-            Research</a>
+	<div class="col-8 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
+		<div id="main" role="main">
+		{{ content }}
+		</div>
         </div>
       </div>
     </header>
 
-    <div id="main" role="main">
-      <div class="baselinegrid">
-        {% for i in (1..200) %}
-          <div class="line"></div>
-        {% endfor %}
-      </div>
-      <div class="displaygrid">
-        <div class="grid">
-          {% for i in (1..12) %}
-            <div class="col-1"></div>
-          {% endfor %}
-        </div>
-      </div>
-      {{ content }}
-    </div>
-
-    <!-- <footer> -->
-    <!--   <div class="grid"> -->
-    <!--     <div class="col-3 col-sm-6"> -->
-    <!--       <a href="//braindump.kieranbrowne.com">Brain Dump</a><br> -->
-    <!--       <a href="//www.github.com/kieranbrowne">Github</a><br> -->
-    <!--       <1!-- <a href="/cv/">CV</a><br> --1> -->
-    <!--     </div> -->
-    <!--     <div class="col-3 col-sm-6"> -->
-    <!--       <a href="//www.instagram.com/_kieranbrowne">Instagram</a><br> -->
-    <!--       <a href="//twitter.com/kieran_browne_">Twitter</a> -->
-    <!--     </div> -->
-    <!--     <div class="col-3 col-sm-6"> -->
-    <!--     </div> -->
-    <!--     <div class="col-3 col-sm-6 talr mono version-number"> -->
-    <!--       v2.0.2 -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!-- </footer> -->
 
   </body>
 </html>
