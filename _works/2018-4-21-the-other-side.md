@@ -25,7 +25,8 @@ Reading aloud from a book, one member of the séance instructs the others to rot
 
 Comparisons between machine learning and magic are common even amongst experts and practitioners. Although the mathematics of neural networks are well defined, the models they produce are invariably complex and indecipherable. They work, but it is difficult to explain why or how. When used in this way, deep learning is a form of divination, an arcane set of steps that delivers answers without explanations. Without explanation, to trust the network is an act of faith.
 
-### Performance
+### Performances
 
-The work was performed at the [CHI conference](https://chi2018.acm.org/) in April 2018.
+The work was first performed for the [CHI conference](https://chi2018.acm.org/) in Montreal in April 2018.
+It was performed for a second time for *The Fig Tree* exbibition at [AD Space](https://www.arc.unsw.edu.au/art-design/ad-space) in September 2019.
 
