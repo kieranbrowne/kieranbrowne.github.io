@@ -1,0 +1,88 @@
+---
+layout: default
+title: Research
+permalink: /publications/
+sidemenu: research
+book_chapters:
+  - title: Critical Challenges for the Visual Representation of Deep Neural Networks
+    year: 2018
+    with: Ben Swift and Henry Gardner
+    publication: Human and Machine Learning
+    abstract: >
+      Artificial neural networks have proved successful in a broad range of applications over the last decade. However, there remain significant concerns about their interpretability. Visual representation is one way researchers are attempting to make sense of these models and their behaviour. The representation of neural networks raises questions which cross disciplinary boundaries. This chapter draws on a growing collection of interdisciplinary scholarship regarding neural networks. We present six case studies in the visual representation of neural networks and examine the particular representational challenges posed by these algorithms. Finally we summarise the ideas raised in the case studies as a set of takeaways for researchers engaging in this area.
+
+conf_papers:
+  - title: Camera Adversaria
+    year: 2020
+    with: Ben Swift and Terhi Nurmikko-Fuller
+    filename: camera_adversaria.pdf
+    publication: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems
+    abstract: >
+      In this paper we introduce Camera Adversaria; a mobile app designed to disrupt the automatic surveillance of personal photographs by technology companies. The app leverages the brittleness of deep neural networks with respect to highfrequency signals, adding generative adversarial perturbations to users’ photographs. These perturbations confound image classification systems but are virtually imperceptible to human viewers. Camera Adversaria builds on methods developed by machine learning researchers as well as a growing body of work, primarily from art and design, which transgresses contemporary surveillance systems. We map the design space of responses to surveillance and identify an under-explored region where our project is situated. Finally we show that the language typically used in the adversarial perturbation literature serves to affirm corporate surveillance practices and malign resistance. This raises significant questions about the function of the research community in countenancing systems of surveillance.
+  - title: Eating computers considered harmful
+    year: 2020
+    with: Ben Swift and Terhi Nurmikko-Fuller
+    publication: Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems
+    filename: eating_computers_considered_harmful.pdf
+    abstract: >
+      Contemporary computing devices contain a concoction of numerous hazardous materials. Though users are more or less protected from these substances, recycling and landfilling reintroduce them to the biosphere where they may be ingested by people. This paper calls on HCI researchers to consider these corporal interactions with computers and critiques HCI's existing responses to the e-waste problem. We propose that whether one would consider eating a particular electronic component offers a surprisingly useful heuristic for whether we ought to be producing it on mass with vanishingly short lifespans. We hypothesize that the adoption of this heuristic might affect user behaviour and present a diet plan for users who wish to take responsibility for their own e-waste by eating it. Finally we propose an alternative direction for HCI researchers to design and advocate for those affected by the material properties of e-waste.
+  - title: "The Other Side: Algorithm as Ritual in Artificial Intelligence"
+    year: 2018
+    with: Ben Swift
+    publication: Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems
+    filename: the_other_side.pdf
+    abstract: >
+      Our cultural and scientific understandings of neural networks are built on a set of philosophical ideas which might turn out to be superstitions. Drawing on methodologies of defamiliarisation and performance art which have been adopted by HCI, we present an analog apparatus for the ritualistic performance of neural network algorithms. The apparatus draws on the interaction modes of the Ouija board to provide a system which involves the user in the computation. By recontextualising neural computation, the work creates critical distance with which to examine the philosophical and cultural assumptions embedded in our conception of AI.
+---
+
+
+    <!--<div class="spacer-8"></div>-->
+    <h3>Conference Papers</h3>
+    <div class="posts">
+      {% for post in page.conf_papers %}
+      <div class="publication" data-tags="">
+          <a href="{{ site.baseurl }}/publications/{{post.filename}}" >
+            <div class="title">
+              {{ post.title }}
+            </div>
+            <div class="booktitle" >
+              {{ post.publication }}
+            </div>
+            <div class="year">
+              {{ post.year }}
+            </div>
+            <div class="with">
+              with {{ post.with }}
+            </div>
+            <div class="abstract">
+              {{ post.abstract }}
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <h3>Book Chapters</h3>
+    <div class="posts">
+      {% for post in page.book_chapters %}
+      <div class="publication" data-tags="">
+          <a href="{{ site.baseurl }}/publications/{{post.filename}}" >
+            <div class="title">
+              {{ post.title }}
+            </div>
+            <div class="booktitle" >
+              {{ post.publication }}
+            </div>
+            <div class="year">
+              {{ post.year }}
+            </div>
+            <div class="with">
+              with {{ post.with }}
+            </div>
+            <div class="abstract">
+              {{ post.abstract }}
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="spacer-10"></div>

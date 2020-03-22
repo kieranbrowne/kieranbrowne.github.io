@@ -144,6 +144,54 @@ p {
   margin-top: -1rem;
 
 }
+
+
+.publication {
+   padding-left: 4rem;
+   box-sizing: border-box;
+   margin-top: 2rem;
+
+   a:hover {
+     background: none;
+   }
+
+  .title {
+    @include baseline(1.1rem,2rem,2rem);
+    color: rgb(20,20,20);
+    font-weight: 500;
+    padding-right: 1rem;
+    display: inline;
+    margin-left: -4rem;
+  }
+  .booktitle {
+    @include baseline(1.1rem,2rem,2rem);
+    color: rgb(20,20,20);
+    padding-right: 1rem;
+    display: inline;
+  }
+  .with {
+    //display: inline;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    @include baseline(1.1rem,1.0rem);
+  }
+  .year {
+    @include baseline(0.9rem,1.5rem);
+    color: rgb(20,20,20);
+    font-weight: 300;
+    display: inline;
+    padding-right: 1rem;
+    //border-bottom: 1px solid grey;
+  }
+  .abstract {
+    @include baseline(1.0rem,1.5rem);
+    font-weight: 300;
+    //padding-left: 4rem;
+
+  }
+}
+
+
 .post {
   .title {
     @include baseline(1.1rem,2rem,2rem);
