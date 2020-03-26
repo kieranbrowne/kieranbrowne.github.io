@@ -56,9 +56,11 @@ conf_papers:
             <div class="year">
               {{ post.year }}
             </div>
+            {% if post.with %}
             <div class="with">
               with {{ post.with }}
             </div>
+            {% endif %}
             <div class="abstract">
               {{ post.abstract }}
             </div>
@@ -80,9 +82,11 @@ conf_papers:
             <div class="year">
               {{ post.year }}
             </div>
+            {% if post.with %}
             <div class="with">
               with {{ post.with }}
             </div>
+            {% endif %}
             <div class="abstract">
               {{ post.abstract }}
             </div>
