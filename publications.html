@@ -3,6 +3,17 @@ layout: default
 title: Research
 permalink: /publications/
 sidemenu: research
+
+workshop_papers:
+  - title: Enacting Collective Ownership Economies within Amazon’s Mechanical Turk
+    year: 2020
+    with: Ben Swift
+    publication: Extended Abstracts of the 2020 CHI Conference on Human Factors in Computing Systems
+    filename: enacting_collective_ownership.pdf
+    abstract: >
+      This paper details a socially engaged art project which enacts collectivist economic relations within Amazon’s Mechanical Turk platform. We paid workers on the platform to collectively author a plain-language edition of Karl Marx’s Manifesto of the Communist Party. When published, this text will become an asset owned by the workers who maintain authorship and will earn royalties on sales. This project examines the extent to which economic relations on the platform are locked into a neoliberal ideology and suggests alternative economic possibilities for crowdwork.
+
+
 book_chapters:
   - title: Critical Challenges for the Visual Representation of Deep Neural Networks
     year: 2018
@@ -71,6 +82,32 @@ conf_papers:
     <h3>Book Chapters</h3>
     <div class="posts">
       {% for post in page.book_chapters %}
+      <div class="publication" data-tags="">
+          <a href="{{ site.baseurl }}/publications/{{post.filename}}" >
+            <div class="title">
+              {{ post.title }}
+            </div>
+            <div class="booktitle" >
+              {{ post.publication }}
+            </div>
+            <div class="year">
+              {{ post.year }}
+            </div>
+            {% if post.with %}
+            <div class="with">
+              with {{ post.with }}
+            </div>
+            {% endif %}
+            <div class="abstract">
+              {{ post.abstract }}
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+    <h3>Workshop Papers</h3>
+    <div class="posts">
+      {% for post in page.workshop_papers %}
       <div class="publication" data-tags="">
           <a href="{{ site.baseurl }}/publications/{{post.filename}}" >
             <div class="title">
