@@ -1,0 +1,27 @@
+<div class="publication" data-tags="">
+<div class="title">
+{{ include.publication.title }}
+</div>
+<div class="booktitle" >
+{{ include.publication.publication }}
+</div>
+<div class="year">
+{{ include.publication.year }}
+</div>
+{% if include.publication.with %}
+<div class="with">
+with {{ include.publication.with }}
+</div>
+{% endif %}
+<div class="abstract">
+{{ include.publication.abstract }}
+</div>
+<div class="">
+{% if include.publication.filename %}
+<a class="tile preprint" href="{{ site.baseurl }}/publications/{{include.publication.filename}}">&#x2b07; Pre-print</a>
+{% endif %}
+{% if include.publication.video %}
+<a class="tile video" href="{{include.publication.video}}">&#9654; Presentation</a>
+{% endif %}
+</div>
+</div>

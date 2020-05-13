@@ -1104,8 +1104,34 @@ sup {
   font-family: monospace;
 }
 
+.tile {
+    @include baseline(1.0rem,1.5rem);
+    font-weight: 300;
+  color: white;
+  border-radius: 3px;
+  text-align: center;
+  width: auto;
+  padding: 5px 10px ;
+  margin-top: 20px;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
 
+.preprint {
+  background: #029;
 
+  &:hover {
+    box-shadow: 0 0 0 2px #029 inset;
+    color: #029;
+  }
+}
+
+.tile.video {
+  background: #000;
+  &:hover {
+    box-shadow: 0 0 0 2px #000 inset;
+  }
+}
 
 
 
