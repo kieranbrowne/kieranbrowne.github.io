@@ -56,19 +56,19 @@ conf_papers:
 
     <!--<div class="spacer-8"></div>-->
     <h3>Conference Papers</h3>
-    <div class="posts">
+    <div class="publications">
       {% for pub in page.conf_papers %}
 	{% include publication.html publication=pub %}
       {% endfor %}
     </div>
     <h3>Book Chapters</h3>
-    <div class="posts">
+    <div class="publications">
       {% for pub in page.book_chapters %}
 	{% include publication.html publication=pub %}
       {% endfor %}
     </div>
     <h3>Workshop Papers</h3>
-    <div class="posts">
+    <div class="publications">
       {% for pub in page.workshop_papers %}
 	{% include publication.html publication=pub %}
       {% endfor %}
