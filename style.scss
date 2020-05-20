@@ -88,6 +88,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
 }
 
+hr {
+  max-width: 140px;
+  margin-top: 50px;
+  border: none;
+  border-bottom: 2px dotted  black;
+  margin-left: 0;
+}
+
 %mh-auto {
   margin-left: auto;
   margin-right: auto;
@@ -298,14 +306,15 @@ p {
 
 .tags {
 
-  text-align: center;
+  text-align: left;
   font-family: monospace;
   font-weight: bold;
   text-transform: uppercase;
   list-style: none;
   padding-left: 0;
+  margin: 0;
   @include baseline(0.9rem,1.5rem,2rem);
-  max-width: 40vw;
+  //max-width: 40vw;
   @extend %mh-auto;
 
   li {
@@ -920,11 +929,11 @@ footer {
     flex-direction: column-reverse;
   }
 
-h1:not(.site-title) {
-  // @include baseline($baseline*1.8,$baseline*2,$baseline*2);
-  // @include baseline(28px,$baseline*4,$baseline*5, 0 ,1.3);
-  text-align: center;
-}
+  h1:not(.site-title) {
+      // @include baseline($baseline*1.8,$baseline*2,$baseline*2);
+      // @include baseline(28px,$baseline*4,$baseline*5, 0 ,1.3);
+      text-align: center;
+  }
 
 .side-menu {
   @include baseline(14px,$baseline*3,$baseline*5);
@@ -934,6 +943,15 @@ h1:not(.site-title) {
   margin-right: 2em;
   display: inline-block;
 }
+
+  .date ,
+  .tags {
+    text-align: center;
+  }
+  hr {
+    margin-left: auto;
+  }
+
 }
 
 ::-moz-selection { /* Code for Firefox */
