@@ -214,7 +214,7 @@ Kenneth T Co, Luis Muñoz-González, and Emil C Lupu. &ldquo;Procedural Noise Ad
 <br>
 <br>
 <br>
-?<br> <span>
+Why hasn't someone done this already?<br> <span>
 </span>
 </blockquote>
 
