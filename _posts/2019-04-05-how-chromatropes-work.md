@@ -279,6 +279,8 @@ You can read more about chromatropes at [the Museum of Applied Arts & Sciences b
 [^colour]: Readers with an eye for etymology may be wondering why the examples above are colourless. Achromatic chromatropes were made, although they were rare. This post presents the building blocks of chromatropic effects in black and white because they are easier to understand. For some examples of coloured chromatropes see [my other page on this](/research/making-old-media-new/).
 [^lanternamagica]: Mannoni, Laurent, and Donata Pesenti Campagnoni, eds. *Lanterna magica e film dipinto: 400 anni di cinema.* “Il” Castoro, 2010.
 
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
 <script>
 jQuery(window).scroll(function(){
    $("svg").each(function() {
