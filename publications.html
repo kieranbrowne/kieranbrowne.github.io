@@ -4,6 +4,27 @@ title: Research
 permalink: /publications/
 sidemenu: research
 
+journal_articles:
+  - title: "NMA Bilderatlas: a practice-led model for critically examining machine vision in cultural collections"
+    year: 2020
+    with: Katrina Grant
+    publication: Under Review
+    filename: nma_bilderatlas.pdf
+    abstract: >
+      The transformation of machine vision brought about by deep learning has afforded new ways to make sense of digitised images at scale. However, before adopting machine vision into the digital humanistic toolkit we ought to interrogate how this technology mediates our connection to objects of study just as it appears to bring them closer. This article raises critical issues around the application of machine vision systems in museums and cultural institutions. We describe NMA Bilderatlas, an online interface to the National Museum of Australia’s collection structured by the representational schemes of an off-the-shelf machine vision model. The interface serves as a surrogate for our critique of machine vision, which, for lack of interpretability, cannot be directly interpreted. Examining how a machine vision system structures the archive, we identify possible opportunities for cultural institutions as well as likely pitfalls that will arise if machine vision systems are applied uncritically.
+  - title: "Semantics and explanation: why counterfactual explanations produce adversarial examples in deep neural networks"
+    year: 2020
+    with: Ben Swift
+    publication: Under Review
+    filename: semantics_and_explanation.pdf
+    abstract: >
+      Recent papers in explainable AI have made a compelling case for counterfactual modes of explanation. While counterfactual explanations appear to be extremely effective in some instances, they are formally equivalent to adversarial examples. This presents an apparent paradox for explainability researchers: if these two procedures are formally equivalent, what accounts for the explanatory divide apparent between counterfactual explanations and adversarial examples? We resolve this paradox by placing emphasis back on the semantics of counterfactual expressions. Producing satisfactory explanations for deep learning systems will require that we find ways to interpret the semantics of hidden layer representations in deep neural networks.
+  - title: Who (or What) is an AI Artist?    
+    year: 2020
+    publication: Under Review
+    filename: who_or_what_is_an_ai_artist.pdf
+    abstract: >
+      The mainstream contemporary art world is suddenly showing interest in "AI art". While this has enlivened the practice, there remains significant disagreement over who or what actually deserves to be called an "AI artist". This article examines several claimants to the term and grounds these in art history and theory. It addresses the controversial elevation of some artists over others and accounts for these choices, arguing that the art market alienates AI artists from their work. Finally, it proposes that AI art’s interactions with art institutions have not promoted new creative possibilities but have instead reinforced conservative forms and aesthetics. 
 
 workshop_papers:
   - title: Enacting Collective Ownership Economies within Amazon’s Mechanical Turk
@@ -57,6 +78,12 @@ conf_papers:
 
 
     <!--<div class="spacer-8"></div>-->
+    <h3>Journal Articles</h3>
+    <div class="publications">
+      {% for pub in page.journal_articles %}
+	{% include publication.html publication=pub %}
+      {% endfor %}
+    </div>
     <h3>Conference Papers</h3>
     <div class="publications">
       {% for pub in page.conf_papers %}
