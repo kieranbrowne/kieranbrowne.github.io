@@ -6,7 +6,7 @@ permalink: /api/research
   {% for post in site.posts %}
     {
       "date": "{{ post.date }}",
-      "title": "{{ post.title }}",
+      "title": "{{ post.title | replace: "'", "&rsquot;" }}",
       "url": "{{ post.url }}",
       "content": "{{ post.data.content }}",
       "slug": "{{ post.slug }}"
