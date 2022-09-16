@@ -8,6 +8,7 @@ permalink: /api/research
       "date": "{{ post.date }}",
       "title": "{{ post.title }}",
       "url": "{{ post.url }}",
+      "content": "{{ post.data.content }}",
       "slug": "{{ post.slug }}"
     }
     {% unless forloop.last %},{% endunless %}
