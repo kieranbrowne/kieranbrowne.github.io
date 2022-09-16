@@ -1,11 +1,11 @@
 ---
-title: &title Starting Blocks
 layout: post
 thumbnail: /images/starting-blocks.jpg
 kurzgesagt: Machine learning is a powerful tool changing the way we solve problems. This however, comes at the price of transparency; there is no longer a clear relationship between user input and system output. We need to redesign the human interfaces to machine learning systems so that users can understand and manipulate them.
 excerpt: The first week of my PhD has been a mix of fun and frustration. I planned an ambitious start to my research which fizzled out due to some enrolment issues.
 
 
+title: &title Starting Blocks
 content: &content | 
   Hello, **world** 
   I am here 
