@@ -1,0 +1,10 @@
+---
+title: List of all posts
+permalink: /api/bio
+---
+{% assign bio = site.pages | where: "permalink", "/bio/" | first %}
+{
+  "title": "{{ bio.title }}",
+  "exhibitions": {{ bio.exhibitions | jsonify }}, 
+  "other_links": {{ bio.other_links | jsonify }}
+}

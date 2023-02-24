@@ -5,41 +5,20 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/output.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
   </head>
 
   <body class="{{page.background}} {{page.layout}} {{page.classes}}">
 
-    <header>
-      <div class="grid">
-        <div class="col-3 col-push-1 col-sm-11 col-xs-push-0">
-          <a href="/"><h1 class="site-title"><span>Kieran<br>Browne</span></h1></a>
-	  <ul class="side-menu">
-		  <li><a href="/work">Work</a><br></li>
-		  <li><a href="/research">Research Blog</a><br></li>
-		  <li><a href="/publications">Publications</a><br></li>
-		  <li><a href="/bio">Bio</a><br></li>
-	  </ul>
-	  <ul class="side-menu">
-		  <li><a href="//www.instagram.com/kieran_browne_"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-		  <li><a href="//twitter.com/kieran_browne_"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-		  <li><a href="//www.github.com/kieranbrowne"><i class="fa fa-github" aria-hidden="true"></i></a><br></li>
-	  </ul>
-        </div>
-	<div class="col-8 col-sm-10 col-sm-push-1 col-xs-12 col-xs-push-0">
-		<div id="main" role="main">
-		{{ content }}
-		</div>
-        </div>
-      </div>
-    </header>
+    <noscript>You need to enable JavaScript to run this website.</noscript>
 
+    <canvas class="fixed z-[-1]" id="bg"></canvas>
+
+    <div id="root"></div>
+
+    <script src="/script/main.js"></script>
 
   </body>
 </html>

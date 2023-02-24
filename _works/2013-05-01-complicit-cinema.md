@@ -3,11 +3,13 @@ layout: work
 title: Complicit Cinema
 hero: /images/complicit-cinema.jpg
 thumbnail: /images/complicit-cinema-thumbnail.jpg
+hover_thumbnail: /images/complicit-cinema-3.jpg
 tags: 
     - new media
     - old media
 year: 2013
 materials: EEG, Hitchcock scene, custom software
+thumbshape: 3/2
 ---
 
 {% include figure.html src="/images/complicit-cinema.jpg" %}
