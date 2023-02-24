@@ -1,0 +1,9 @@
+---
+title: List of all posts
+permalink: /api/publications
+---
+{% assign research = site.pages | where: "permalink", "/publications/" | first %}
+{
+  "title": "{{ research.title }}",
+  "peer_reviewed": {{ research.peer_reviewed | jsonify }}
+}

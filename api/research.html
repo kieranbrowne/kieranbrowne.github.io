@@ -2,5 +2,11 @@
 title: List of all posts
 permalink: /api/research
 ---
-[ {% for post in site.posts %} { "date": "{{ post.date }}", "title": "{{ post.title | replace: "'", "\\'"  }}", "url": "{{ post.url }}", "content": "{{ post.data.content | replace: '"', "&quot;" }}", "slug": "{{ post.slug }}" } {% unless forloop.last %},{% endunless %} {% endfor %} ]
+[ {% for post in site.posts %} 
+ { "date": "{{ post.date }}", 
+ "title": "{{ post.title | replace: "'", "&lsquo;"  }}", 
+ "url": "{{ post.url }}", 
+ "content": "{{ post.markdown }}", 
+ "slug": "{{ post.slug }}" } 
+ {% unless forloop.last %},{% endunless %} {% endfor %} ]
 

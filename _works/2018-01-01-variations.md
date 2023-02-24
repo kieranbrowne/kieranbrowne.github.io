@@ -1,16 +1,23 @@
 ---
 layout: work
-title: Artificial Artists
-year: 2014 &ndash; 2016
-tags:
-    - mixed media
-    - old media
-materials: plywood, PCB, stepper motors, rubber belt, custom software
-thumbnail2: /images/ava-1.jpg
-hover_thumbnail: https://storage.googleapis.com/kieranbrowne-public-files/images/artificial_artists_1.jpg
-thumbnail: /images/ava-1.jpg
-hero: https://storage.googleapis.com/kieranbrowne-public-files/images/artificial_artists_1.jpg
-thumbshape: 3/2
+title: Variations
+materials: custom software
+thumbnail: https://storage.googleapis.com/kieranbrowne-public-files/images/variations_53.png
+hover_thumbnail: https://storage.googleapis.com/kieranbrowne-public-files/images/variations_3.png
+hero: https://storage.googleapis.com/kieranbrowne-public-files/images/variations_53.png
+thumbshape: 1/1
+content_blocks:
+    - type: gallery
+      images:
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_53.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_2.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_3.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_7.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_8.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_9.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_4.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_5.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_6.png
 ---
 
 {% include figure.html src="/images/drawing-machine.jpg" %}
