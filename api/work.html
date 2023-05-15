@@ -14,7 +14,7 @@ permalink: /api/work
     "thumbshape": "{{ post.thumbshape }}", 
     "slug": "{{ post.slug }}",
     "hero": "{{ post.hero | default: null }}",
-    "role": "{{ post.role | default: null }}" 
+    "subtitle": "{{ post.subtitle | default: null }}" 
   } 
 {% unless forloop.last %},{% endunless %} {% endfor %} 
 ]
