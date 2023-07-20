@@ -5,9 +5,9 @@ year: 2018
 tags:
     - new media
 materials: 'custom software<br> duration: infinite'
-thumbnail: /images/soft-bodies-thumbnail.png
-hover_thumbnail: /images/soft-bodies-1.jpg
-hero: /images/soft-bodies-1.jpg
+thumbnail: https://storage.googleapis.com/kb_site_files/images/soft-bodies-1.jpg
+hover_thumbnail: https://storage.googleapis.com/kb_site_files/images/soft-bodies-2.jpg
+hero: https://storage.googleapis.com/kb_site_files/images/soft-bodies-1.jpg
 thumbshape: 1/1
 subtitle: WebGL Experiment
 content_blocks:
@@ -29,14 +29,3 @@ content_blocks:
       src: https://kieranbrowne.com/shader/soft-bodies/
 
 ---
-
-*Soft bodies* explores out-of-context bodily forms.
-
-{% include shader.html shader="soft-bodies" %}
-
-{% include figure.html src="/images/soft-bodies-1.jpg" caption="" %}
-
-{% include figure.html src="/images/soft-bodies-2.jpg" caption="" %}
-
-{% include figure.html src="/images/soft-bodies-3.jpg" caption="" %}
-
