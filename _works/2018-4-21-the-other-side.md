@@ -1,6 +1,7 @@
 ---
 layout: work
 title: The Other Side
+subtitle: Performance Artwork and Associated Artefacts
 year: 2018
 tags:
     - old media
@@ -23,6 +24,13 @@ content_blocks:
     - type: textblock
       content: The work was first performed for the CHI conference in Montreal in April 2018. It was performed for a second time for The Fig Tree exbibition at AD Space in September 2019.
 
+    - type: figure
+      shape: small
+      caption: "Diagram showing the design of the computing apparatus."
+      src: https://storage.googleapis.com/kieranbrowne-public-files/images/seance-apparatus-diagram.jpg
+
+    - type: youtube
+      videoID: "1Y8MqnXYLQU"
 
 ---
 

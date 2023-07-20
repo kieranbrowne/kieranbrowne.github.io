@@ -1,6 +1,7 @@
 ---
 layout: work
 title: Variations
+subtitle: Generative Art Experiments
 materials: custom software
 thumbnail: https://storage.googleapis.com/kieranbrowne-public-files/images/variations_53.png
 hover_thumbnail: https://storage.googleapis.com/kieranbrowne-public-files/images/variations_3.png
