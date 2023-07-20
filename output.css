@@ -1107,6 +1107,10 @@ video {
   grid-column-start: 2;
 }
 
+.col-start-1 {
+  grid-column-start: 1;
+}
+
 .mx-\[20px\] {
   margin-left: 20px;
   margin-right: 20px;
@@ -1879,6 +1883,10 @@ body::-webkit-scrollbar {
     grid-column: span 3 / span 3;
   }
 
+  .sm\:col-span-5 {
+    grid-column: span 5 / span 5;
+  }
+
   .sm\:col-start-2 {
     grid-column-start: 2;
   }
@@ -2187,6 +2195,10 @@ body::-webkit-scrollbar {
 
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .lg\:col-start-2 {
