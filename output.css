@@ -1063,6 +1063,13 @@ video {
   position: relative;
 }
 
+.inset-0 {
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -1382,6 +1389,10 @@ video {
 
 .pt-\[10px\] {
   padding-top: 10px;
+}
+
+.pb-\[60\%\] {
+  padding-bottom: 60%;
 }
 
 .pb-\[56\.25\%\] {
