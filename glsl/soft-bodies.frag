@@ -1,11 +1,11 @@
 #ifdef GL_ES
-precision lowp float;
-precision lowp int;
+precision highp float;
+precision mediump int;
 #endif
 
 uniform vec2 uResolution;
 uniform float uPixelDensity;
-uniform float uTime;
+uniform highp float uTime;
 
 
 /*
