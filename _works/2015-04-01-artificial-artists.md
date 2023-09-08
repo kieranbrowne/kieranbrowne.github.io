@@ -15,10 +15,6 @@ content_blocks:
     - type: textblock
       content: '*Artificial Artists* is a series of art machines that contribute to the creation of visual "ideas" as well as the production of images. The machines vary in style and each was created to express a unique persona. The aim with the works is to push the limits of non-human artistry.'
 
-    - type: figure
-      shape: small
-      caption: "Diagram showing the design of the computing apparatus. The outer two rings operate as a slide-rule (for multiplication) while the inner two add up the results of successive multiplications."
-      src: https://storage.googleapis.com/kieranbrowne-public-files/images/seance-apparatus-diagram.jpg
     - type: youtube
       videoID: "RjujVJF5MrE"
 

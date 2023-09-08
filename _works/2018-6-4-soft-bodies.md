@@ -14,9 +14,9 @@ content_blocks:
     - type: textblock
       content: Soft bodies is a graphics experiment, written for the browser that makes use of OpenGL shaders and the ["ray marching"](https://en.wikipedia.org/wiki/Ray_marching) algorithm.
     - type: textblock
-      content: This is a technique that uses distance functions, rather than geometry to produce 3 dimensional imagery. Because no geometry is being manipulated its possible to the resulting shapes fluidly.
+      content: This is a technique that uses distance functions, rather than geometry to produce 3 dimensional imagery. Because no geometry is being manipulated its possible to manipulate the resulting shapes fluidly.
     - type: textblock
-      content: What I found while experimenting with this technique is that the resulting imagery can look very organic and alive. 
+      content: What I found while experimenting with this technique is that the resulting imagery can look surprisingly organic. Though clearly abstract, the shifting fleshy forms occasionally have flashes of resemblance to body parts; a knee-cap, shoulder or clavicle.
     - type: gallery
       caption: Screenshots of "soft bodies" at particularly human-like moments.  
       images:

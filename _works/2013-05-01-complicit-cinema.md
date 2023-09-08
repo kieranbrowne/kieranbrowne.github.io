@@ -1,5 +1,6 @@
 ---
 layout: work
+published: false
 title: Complicit Cinema
 hero: /images/complicit-cinema.jpg
 thumbnail: /images/complicit-cinema-thumbnail.jpg

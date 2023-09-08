@@ -8,32 +8,22 @@ hover_thumbnail: https://storage.googleapis.com/kieranbrowne-public-files/images
 hero: https://storage.googleapis.com/kieranbrowne-public-files/images/variations_53.png
 thumbshape: 1/1
 content_blocks:
+    - type: textblock
+      content: In 2018 I did a series of daily generative art experiments attempting to recreate with code numerous paintings, drawings and prints of 20th century modern art. 
+
+    - type: textblock
+      content: For these studies I would find an artwork on a museum website (usually the Tate) and try to reproduce it as closely as I could in code. After creating a close copy I would play with the resulting code to produce variations of the composition. The resulting images are somewhere between copies and originals, being technically novel, but deeply indebted to the creativity of the original author.
+
     - type: gallery
       images:
-      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_53.png
       - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_2.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_53.png
       - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_3.png
-      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_7.png
       - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_8.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_7.png
       - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_9.png
-      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_4.png
       - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_5.png
+      - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_4.png
       - https://storage.googleapis.com/kieranbrowne-public-files/images/variations_6.png
 ---
-
-{% include figure.html src="/images/drawing-machine.jpg" %}
-
-*Artificial Artists* is a series of art machines that contribute to the creation of visual "ideas" as well as the production of images. 
-The machines vary in style and each was created to express a unique persona. The aim with the works is to push the limits of non-human artistry.
-
-
-{% include figure.html src="/images/ava-1.jpg" caption="\"Fan art machine\" searches the web for famous faces and renders renders them in charcoal with a mixture of flowing lines crosshatching." %}
-
-{% include figure.html src="/images/ava-2.jpg" %}
-
-In judging whether an art object is ‘the real thing’, we tend to care mostly about the means by which it came into existence. Hence, the question of whether machines can take the credit for producing genuine art, is essentially a question about what kind of processes count as artistic and which do not. If a machine cannot simply imitate the production of artworks  but distill images to produce original visual output, it is no longer imitating artistry, it is performing it.
-
-
-{% include figure.html src="/images/sam-gallery.jpg" caption="\"Pop art machine\" searches the web for pop art images and automatically appropriates them." %}
-
 
