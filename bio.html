@@ -93,89 +93,23 @@ other_links:
 
 ---
 
-<div class="bio">
-<h2>Bio</h2>
-<p>
-Kieran Browne is a Canberra based artist. He was born in a mining town in western New South Wales and grew up in various towns and cities around the state. His work combines new and old media; seeking ways to make new technologies visible and tangible. This follows the work of artists like Harold Cohen and Natalie Jeremijenko.</p>
+    <div class="sm:col-start-2 lg:col-start-2 col-span-8 sm:col-span-6 lg:col-span-4 mt-[100px]">
+      <h1 class="text-[3rem] leading-[3.6rem] mb-[3rem]">Kieran Browne is a creative technologist, researcher&nbsp;<wbr>and occasional artist</h1>
+      <p class="text-[1rem] leading-[1.5rem] mt-[2rem]">Kieran Browne has a background in visual arts and a PhD in machine learning. His laurels include several peer-reviewed publications, an artwork exhibited at the National Gallery of Australia, and being briefly cited in the French wikipedia article on artificial intelligence. His creative practice is primarily software based but incorporates elements of old media. Amongst his works are drawing machines, generative art, an anti-surveillance camera app, and a ouija board that can compute neural networks.</p>
+      <h2 class="font-bold text-[1rem] leading-[1.5rem] mt-[2rem]">Get in touch</h2>
+      <p class="text-[1rem] leading-[1.5rem] mt-[1rem]">hello@kieranbrowne.com</p>
+      <h2 class="font-bold text-[1rem] leading-[1.5rem] mt-[2rem]">Links and other media</h2>
 
-<p>Kieran began his creative life intending to make films. By a happy accident he was introduced to programming while at art school and began making images with code. Software grew to occupy more and more of his practice but his interest in old media remained.</p>
+      {% for link in page.other_links %}
+      <p class="text-[1rem] leading-[1.5rem] my-[27px]">{{link.year}}, <a class="underline" href="{{link.url}}">{{link.title}}</a>, <i>{{link.publication}}</i></p>
+      {% endfor %}
+    </div>
 
-<p>Between 2014 and 2016 he built a series of artificial artists / drawing machines. These would seek out and consume online images to generate large format pen and charcoal drawings. These works probed at the definitions of "artist" and "creative" and aimed to expand these to non-humans.</p>
+    <div class="col-span-8 sm:col-start-2 sm:col-span-6 lg:col-start-7 lg:col-span-2 lg:mt-[100px]">
+      <h2 class="font-bold text-[1rem] leading-[1.5rem]">Exhibitions/Performances</h2>
+      {% for show in page.exhibitions %}
+      <p class="text-[1rem] leading-[1.5rem] my-[1.5rem]">{{show.year}}, <i>{{show.event_name}}</i>, {{show.venue}}, {{show.place}}</p>
+      {% endfor %}
+    </div>
 
-<p>In 2017 Kieran began working on a PhD in contemporary artificial intelligence. He is critical of the use of AI to influence social realities through policing, media distribution, banking etc. He is building artefacts that make the strangeness of these technologies readable.</p>
-
-<p>In 2018, he exhibited a work 'Trace' in the National Gallery of Australia.</p>
-
-<h2>Exhibitions / Performances</h2>
-<p>
-2020, <i>smoke</i><br><a href="https://services.anu.edu.au/campus-environment/facilities-maps/big-band-room">Big Band Room</a>, Canberra ACT
-</p>
-<p>
-2019, <i>The Fig Tree</i><br><a href="https://www.arc.unsw.edu.au/art-design/ad-space">AD Space</a>, Sydney NSW
-</p>
-<p>
-2019, <i>Colour Coded</i><br><a href="https://dhg.anu.edu.au">Drill Hall Gallery</a>, Canberra ACT
-</p>
-<p>
-2018, <i>Performing Drawing</i><br><a href="https://nga.gov.au/performingdrawing/default.cfm">National Gallery of Australia</a>, Canberra ACT
-</p>
-<p>
-2018, <i>The Curious Feast</i><br><a href="https://pop-up.anu.edu.au/whats-happening/curious-feast-national-science-week">ANU Popup</a>, Canberra ACT 
-</p>
-<p>
-2018, <i>The Magic Lantern in Australia and the World</i><br><a href="http://soad.cass.anu.edu.au/events/conference-magic-lantern-australia-world">National Film and Sound Archive</a>, Canberra ACT 
-</p>
-<p>
-2018, <i>alt.chi</i><br><a href="https://chi2018.acm.org/authors/alt-chi/">Palais de Congrais</a>, Montreal QC 
-</p>
-<p>
-2015, <i>The Rendered Experience</i><br><a href="http://nishigallery.com.au/">Nishi Gallery</a>, Canberra ACT
-</p>
-<p>
-2015, <i>Graduating Exhibition</i><br><a href="http://soad.cass.anu.edu.au/gallery/main-gallery">ANU School of Art Main Gallery</a>, Canberra ACT
-</p>
-<p>
-2013, <i>The Mountain</i><br><a href="https://www.belconnenartscentre.com.au/">Belconnen Arts Centre</a>, Canberra ACT
-</p>
-<p>
-2012, <i>Sense</i><br><a>ANU Photography and Media Arts Photospace</a>, Canberra ACT
-</p>
-<p>
-2011, <i>Site Transformation</i><br><a href="https://nga.gov.au/sculpturegarden/index.html">National Gallery of Australia Sculpture Garden</a>, Canberra ACT
-</p>
-
-<h2>Other Links / Media</h2>
-
-<p>
-2020, <a href="https://www.theregister.com/2020/07/22/defeat_facial_recognition/">Sick of AI engines scraping your pics for facial recognition? Here's a way to Fawkes them right up</a>, <i>The Register</i>
-</p>
-<p>
-2020, <a href="https://www.wedemain.fr/Reconnaissance-faciale-voici-comment-y-echapper-sur-les-reseaux-sociaux_a4828.html">Reconnaissance faciale : voici comment y échapper sur les réseaux sociaux</a>, <i>We Demain</i>
-</p>
-<p>
-2020, <a href="https://cacm.acm.org/news/245844-blocking-facial-recognition/fulltext">Blocking Facial Recognition</a>, <i>Communications of the ACM</i>
-</p>
-<p>
-2019, <a href="https://www.tandfonline.com/doi/full/10.1080/17460654.2019.1615685">Practice-led research by creative re-use in the Australian Research Council Project Heritage in the Limelight</a>, <i>Early Popular Visual Culture</i>
-</p>
-<p>
-2018, <a href="https://medium.com/national-gallery-of-australia/ok-computer-29b2f3383f33">OK Computer</a>, <i>National Gallery of Australia Blog</i>
-</p>
-<p>
-2018, <a href="https://eagereyes.org/blog/2018/seven-visualization-talks-that-terrified-me-at-chi">Seven Visualization Talks That Terrified Me At CHI</a>, <i>Eager Eyes</i>
-</p>
-<p>
-2018, <a href="https://cs.anu.edu.au/code-creativity-culture/projects/ai-ritual/">AI Ritual</a>, <i>ANU Code/Creativity/Culture group</i>
-</p>
-<p>
-2015, <a href="http://soad.cass.anu.edu.au/sites/default/files/docs/2018-01/Grad_2015_Catalogue_Web.pdf">SOA Graduating Exhibition 2015</a>, <i>ANU School of Art</i>
-</p>
-
-
-<h2>Contact</h2>
-<p>
-<a>kieran DOT browne AT anu.edu.au</a>
-</p> 
-<p></p>
-</div>
 

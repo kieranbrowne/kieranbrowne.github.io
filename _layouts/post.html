@@ -2,25 +2,23 @@
 layout: default
 ---
 
-<div class="main">
-<div class="spacer-5"></div>
-<h1>{{ page.title }}</h1>
-<h4 class="date"> {{ page.date | date_to_long_string }}</h4>
-<ul class="tags">
-{% for tag in page.tags %}
-<li>{{ tag }}</li>
-{% endfor %}
-</ul>
 
-{{ content }}
-<div class="spacer-10"></div>
-{% if page.url != "/research/" %}
-{% include disqus.html %}
-<p>
-<a href="{{site.url}}/research">&larr; Back to Posts</a>
-</p>
-<div class="spacer-10"></div>
-{% endif %}
+<div class="col-span-8 sm:col-span-6 sm:col-start-2 lg:col-span-2 mt-[100px]">
+  {% for post in site.posts %}
+  <a class="hover:bg-violet-600" href="{{post.url}}">
+    <div class="mb-[16px] text-base hover:bg-gray-200 pl-[20px] ml-[-20px] leading-[32px]">{{post.title}}</div>
+  </a>
+  {% endfor %}
 </div>
 
+  <div class="col-span-8 sm:col-span-6 sm:col-start-2 lg:col-span-4 lg:col-start-4 mt-[100px] mdspecific">
+    <article class="prose">
+      <h1 class="text-4xl sm:text-6xl leading-[1.2em] mb-8">{{ page.title }}</h1>
+      <p class="text-base mb-8">{{ page.date | date_to_long_string }}</p>
 
+      {{ content }}
+    </article>
+
+    <h2 class="fancy-font text-4xl mt-16 mb-8">Related Posts</h2>
+    <div class="grid grid-cols-4 gap-[20px] mb-8"><div class="col-span-2 "><a class="text-xl sm:text-2xl underline" href="/research/altchi-2020-a-readers-guide/">Alt.CHI 2020: a reader’s guide</a></div><div class="col-span-2 "><a class="text-xl sm:text-2xl underline" href="/research/how-chromatropes-work/">How chromatropes work</a></div></div>
+  </div>

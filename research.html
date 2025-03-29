@@ -1,27 +1,7 @@
 ---
-layout: default
+layout: post
 title: Research
 permalink: /research/
 sidemenu: research
 ---
 
-<div id="machinelearning"></div>
-<div id="oldmedia"></div>
-<div id="newmedia"></div>
-
-    <div class="spacer-8"></div>
-    <div class="blog-posts">
-      {% for post in site.posts %}
-      <div class="post" data-tags="{{ post.tags | join: ','  | remove: " "}}">
-          <a href="{{ site.baseurl }}{{ post.url }}" >
-            <div class="title">
-              {{ post.title }}
-            </div>
-            <div class="year">
-              {{ post.date | date: "%b %Y" }}
-            </div>
-          </a>
-        </div>
-      {% endfor %}
-    </div>
-    <div class="spacer-10"></div>

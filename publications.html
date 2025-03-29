@@ -2,7 +2,6 @@
 layout: default
 title: Research
 permalink: /publications/
-sidemenu: research
 
 peer_reviewed:
   - title: Who (or What) is an AI Artist?    
@@ -84,3 +83,27 @@ peer_reviewed:
       Artificial neural networks have proved successful in a broad range of applications over the last decade. However, there remain significant concerns about their interpretability. Visual representation is one way researchers are attempting to make sense of these models and their behaviour. The representation of neural networks raises questions which cross disciplinary boundaries. This chapter draws on a growing collection of interdisciplinary scholarship regarding neural networks. We present six case studies in the visual representation of neural networks and examine the particular representational challenges posed by these algorithms. Finally we summarise the ideas raised in the case studies as a set of takeaways for researchers engaging in this area.
 
 ---
+
+<div class="sm:col-start-2 lg:col-start-2 col-span-8 sm:col-span-6 lg:col-span-4 mt-[100px]">
+  <h1 class="text-[3rem] leading-[3.6rem] mb-[3rem]">Research</h1>
+  <h2 class="font-light text-gray-800 text-[1.2rem] leading-[1.5rem] mt-[1rem]">PhD thesis:</h2>
+
+  <h1 class="text-[2.2rem] leading-[2.7rem] mt-[0rem]">Neurological Metaphor in Deep Learning: Issues and Alternatives</h1>
+  <a class="underline text-blue-600" href="https://doi.org/10.25911/3A83-C476">Online Edition</a>
+  &nbsp;·&nbsp;
+  <a class="underline text-blue-600" href="https://doi.org/10.25911/3A83-C476">doi: 10.25911/3A83-C476</a>
+
+  <h2 class="font-light text-gray-800 text-[1.2rem] leading-[1.5rem] mt-[3rem] mb-[0.2rem]">Other Peer-Reviewed Publications:</h2>
+
+  {% for pub in page.peer_reviewed %}
+  <div class="mb-[2rem]">
+    <h1 class="text-[1.5rem] leading-[2.0rem] mt-[0rem]">{{pub.title}}</h1>
+    <p class="text-[1rem] leading-[1.5rem]">{{pub.authors}}. <i>{{pub.publication}}</i> ({{pub.year}}) {{pub.pages}}.</p>
+    <label class="underline text-blue-600">Abstract</label>&nbsp;{% if pub.publication_link %}·&nbsp;<a class="underline text-blue-600" href="{{pub.publication_link}}">Official Link</a>&nbsp;{% endif %}{% if pub.preprint %}·&nbsp;<a class="underline text-blue-600" href="{{pub.preprint}}">Preprint</a>{% endif %}
+    <p class="hideable-abstract text-[1.0rem] leading-[1.4rem] my-[0.4rem] mx-[20px]">{{pub.abstract}}</p>
+  </div>
+  {% endfor %}
+
+
+</div>
+

@@ -2,30 +2,10 @@
 layout: default
 ---
 
-<div id="newmedia"></div>
-<div id="oldmedia"></div>
-<div id="mixedmedia"></div>
-
-<div class="posts">
-    <div class="spacer-8"></div>
-      <div class="works">
-        {% for post in site.works reversed  %}
-          <div class="work tile" 
-               data-title="&lsquo;{{post.title}}&rsquo; ({{post.date | date: "%Y"}})"
-               data-tags="{{ post.tags | join: ','  | remove: " "}}"
-               >
-            <a href="{{ site.baseurl }}{{ post.url }}"
-             {% if post.url == page.url %}
-             class="active"
-             {% endif %}
-             {% if post.thumbnail %}
-             style="background-image: url({{post.thumbnail}});"
-             {% endif %} 
-             >
-                {{ post.title }}
-            </a>
-          </div>
-        {% endfor %}
-      </div>
-    <div class="spacer-10"></div>
-</div>
+{% for work in site.works reversed  %}
+<a class="{% if work.thumbshape == "3/2" %}md:col-span-3{%else%}md:col-span-2{%endif%} sm:col-span-4 col-span-8 mt-[10px] relative" href="{{work.url}}">
+  <div class="" style="background: url(&quot;{{work.thumbnail}}&quot;) center center / cover; padding-bottom: {% if work.thumbshape == "3/2" %}65.5%;{%else%}100%;{%endif%}"></div>
+  <div class="absolute w-full top-0 opacity-0 hover:opacity-100 transition duration-700" style="background: url(&quot;{{work.hover_thumbnail}}&quot;) center center / cover; padding-bottom: {% if work.thumbshape == "3/2" %}65.5%;{%else%}100%;{%endif%}"></div>
+  <span class="text-[18px] leading-[28px] pt-[10px] block">{{work.title}}</span>
+</a>
+{% endfor %}

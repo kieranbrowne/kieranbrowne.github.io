@@ -2,12 +2,75 @@
 layout: default
 ---
 
-<h1>{{page.title}}</h1>
-{% if page.year %}
-<h4>{{ page.year }}</h4>
-{% else %}
-<h4>{{ page.date | date: "%Y" }}</h4>
+<div class="col-span-8 md:col-span-6 md:col-start-2">
+  <img src="{{page.hero}}" class="cursor-zoom-in">
+</div>
+
+<div class="col-span-8 sm:col-span-6 md:col-span-4 md:col-start-3 md:mb-0"><h1 class="text-3xl md:text-6xl md:leading-[72px] leading-1 md:mb-8 md:mt-10">{{page.title}} {%if page.year%}({{page.year}}){%endif%}</h1><h2 class="text-xl md:text-xl leading-[72px] mb-6">{{page.subtitle}}</h2>
+</div>
+
+{% for block in page.content_blocks %}
+{% if block.type == "textblock" %}
+<div class="col-span-8 sm:col-span-6 sm:col-start-2 md:col-span-4 md:col-start-3 md:mb-10"><div class="prose md:prose-lg text-block">
+  {{block.content | markdownify}}
+</div>
+</div>
+{% elsif block.type == "iframe" %}
+<div class="col-span-8 sm:col-span-6 sm:col-start-2 md:col-span-4 md:col-start-3 md:mb-10 relative">
+  <div class="pb-[60%]"></div>
+  <iframe src="{{block.src}}" class="w-full h-full inset-0 absolute" />
+</div>
+{% elsif block.type == "gallery" %}
+<div class="col-span-8 sm:col-span-6 sm:col-start-2 grid grid-cols-6 gap-gutter">
+  {% for image in block.images %}
+  <div class="col-span-8 md:col-span-2 {{block.extra_classes}}" style="{{block.extra_styles}}">
+    <img src="{{image}}" class="cursor-zoom-in" />
+  </div>
+  {% endfor %}
+  <p class="col-span-7 sm:col-span-6 text-gray-700 italic font-light text-sm leading-[1.5rem]">{{block.caption}}</p>
+</div>
+{% elsif block.type == "figure" %}
+  {% if block.shape == "small" %}
+  <div class="col-span-6 col-start-2 sm:col-span-3 md:col-span-3 md:col-start-3 lg:col-span-2 lg:col-start-3 {{block.extra_classes}}" style="{{block.extra_styles}}">
+    <img src="{{block.src}}" class="cursor-zoom-in" />
+  </div>
+  <div class="col-span-6 col-start-2 sm:col-span-4 md:col-span-2 {{block.extra_classes}}" style="{{block.extra_styles}}">
+    <p class="text-gray-700 italic font-light text-sm leading-[1.5rem] mt-4">{{block.caption}}</p>
+  </div>
+  {% elsif block.shape == "smallvideo" %}
+  <div class="col-span-6 col-start-2 sm:col-span-3 md:col-span-3 md:col-start-3 lg:col-span-2 lg:col-start-3  {{block.extra_classes}}" style="{{block.extra_styles}}">
+    <video src="{{block.src}}" muted="true" autoplay="true" loop="true" />
+  </div>
+  <div class="col-span-6 col-start-2 sm:col-span-4 md:col-span-2 {{block.extra_classes}}" style="{{block.extra_styles}}">
+    <p class="text-gray-700 italic font-light text-sm leading-[1.5rem] mt-4">{{block.caption}}</p>
+  </div>
+  {% elsif block.shape == "medium" %}
+  <div class="col-span-8 sm:col-span-5 md:col-span-4 md:col-start-2 lg:col-span-3 lg:col-start-2 {{block.extra_classes}}" style="{{block.extra_styles}}">
+    <img src="{{block.src}}" class="cursor-zoom-in" />
+  </div>
+  <div class="col-span-6 col-start-1 sm:col-span-3 md:col-span-2 lg:col-span-2 {{block.extra_classes}}" style="{{block.extra_styles}}">
+    <p class="text-gray-700 italic font-light text-sm leading-[1.5rem] mt-4">{{block.caption}}</p>
+  </div>
+  {% else %}
+  <div class="col-span-8 md:col-span-6 md:col-start-2 {{block.extra_classes}}" style="{{block.extra_styles}}">
+    <img src="{{block.src}}" class="cursor-zoom-in" />
+    <p class="text-gray-700 italic font-light text-sm leading-[1.5rem] mt-4">{{block.caption}}</p>
+  </div>
+  {% endif %}
+{% elsif block.type == "youtube" %}
+<div class="col-span-8 sm:col-span-6 md:col-span-6 md:col-start-2 relative">
+  <div class="w-full pb-[56.25%]">
+
+    <iframe class="absolute left-0 w-full top-0 h-full" src="https://www.youtube.com/embed/{{block.videoID}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+</div>
+{% elsif block.type == "vimeo" %}
+<div class="col-span-8 sm:col-span-6 md:col-span-6 md:col-start-2 relative">
+  <div class="w-full pb-[56.25%]">
+
+    <iframe class="absolute left-0 w-full top-0 h-full" src="{{block.src}}" title="YouTube video player" frameborder="0"  frameborder="0" allow="autoplay"></iframe>
+  </div>
+</div>
 {% endif %}
-<p><em>{{ page.materials }}</em></p>
-{{ content }}
-<div class="spacer-10"></div>
+{% endfor %}
+
