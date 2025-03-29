@@ -22,7 +22,7 @@ url: "http://kieranbrowne.com"
 permalink: /research/:title/
 
 # The release of Jekyll Now that you're using
-version: v1.2.0
+version: v4.4.1
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
@@ -72,9 +72,3 @@ collections:
     shaders:
         output: true
         permalink: /shader/:title/
-    sketches:
-        output: true
-        permalink: /sketch/:title/
-    vis:
-        output: true
-        permalink: /vis/:title/
