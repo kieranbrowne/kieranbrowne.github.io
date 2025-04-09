@@ -1,6 +1,19 @@
 ---
 ---
 
+@import url('https://rsms.me/inter/inter.css');
+
+@font-face {
+  font-family: 'PP Right Grotesk';
+  src: url('https://storage.googleapis.com/kb_site_files/fonts/PPRightGrotesk-Medium.otf');
+  /*PPRightGrotesk-Medium*/
+}
+
+html { font-family: 'Inter', sans-serif; }
+
+h1 { font-family: 'PP Right Grotesk', sans-serif; }
+.fancy-font { font-family: 'PP Right Grotesk', sans-serif; }
+
 article.prose {
   p {
     font-size: 1rem;
