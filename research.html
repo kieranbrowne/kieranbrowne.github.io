@@ -1,7 +1,14 @@
 ---
-layout: post
+layout: default
 title: Research
 permalink: /research/
 sidemenu: research
 ---
 
+<div class="col-span-8 sm:col-span-6 sm:col-start-2 lg:col-span-2 mt-[100px]">
+  {% for post in site.posts %}
+  <a class="hover:bg-violet-600" href="{{post.url}}">
+    <div class="mb-[16px] text-base hover:bg-gray-200 pl-[20px] ml-[-20px] leading-[32px]">{{post.title}}</div>
+  </a>
+  {% endfor %}
+</div>

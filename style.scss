@@ -8,6 +8,15 @@ article.prose {
     margin-bottom: 1em;
   }
 
+  ul {
+    padding-left: 30px;
+    list-style: disc;
+  }
+  ol {
+    padding-left: 30px;
+    list-style: decimal;
+  }
+
   sup a {
     text-decoration-line: underline;
     text-underline-offset: 4px;
@@ -16,6 +25,10 @@ article.prose {
 
   a {
     color: rgb(236, 72, 153);
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 }
 
@@ -29,4 +42,7 @@ article.prose {
 
 pre.highlight {
   background-color: #eeeeee;
+}
+
+@media (prefers-color-scheme: dark) {
 }

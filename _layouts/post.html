@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-<div class="col-span-8 sm:col-span-6 sm:col-start-2 lg:col-span-2 mt-[100px]">
+<div class="hidden lg:block col-span-8 sm:col-span-6 sm:col-start-2 lg:col-span-2 mt-[100px]">
   {% for post in site.posts %}
   <a class="hover:bg-violet-600" href="{{post.url}}">
     <div class="mb-[16px] text-base hover:bg-gray-200 pl-[20px] ml-[-20px] leading-[32px]">{{post.title}}</div>
@@ -19,6 +19,12 @@ layout: default
       {{ content }}
     </article>
 
+    {% if page.related_posts %}
     <h2 class="fancy-font text-4xl mt-16 mb-8">Related Posts</h2>
-    <div class="grid grid-cols-4 gap-[20px] mb-8"><div class="col-span-2 "><a class="text-xl sm:text-2xl underline" href="/research/altchi-2020-a-readers-guide/">Alt.CHI 2020: a reader’s guide</a></div><div class="col-span-2 "><a class="text-xl sm:text-2xl underline" href="/research/how-chromatropes-work/">How chromatropes work</a></div></div>
+      <div class="grid grid-cols-4 gap-[20px] mb-8">
+      {% for post in page.related_posts %}
+      <div class="col-span-2"><a class="text-xl sm:text-2xl underline" href="{{post.href}}">{{post.title}}</a></div>
+      {% endfor %}
+      </div>
+    {% endif %}
   </div>
