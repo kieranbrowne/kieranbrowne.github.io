@@ -5,7 +5,7 @@ tags:
     - old media
 ---
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="slow">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="slow chromatrope">
   <defs>
     <mask id="combine-1-a">
       <image xlink:href="/images/chromatrope/combine-1-a.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -74,7 +74,7 @@ svg.pass .g1 {
 
 Perhaps the simplest effect that can be achieved with a chromatrope can be seen in the following. These slides create a pulsing or flashing effect when the unpainted points line up; because each dot is evenly spaced around the circle this occurs at a regular interval.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <defs>
     <mask id="flash-mask">
       <image xlink:href="/images/chromatrope/flash-mask.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -87,7 +87,7 @@ Perhaps the simplest effect that can be achieved with a chromatrope can be seen 
 
 By moving the position of points out of sync slightly, some interesting cross-rhythms are produced, extending the percieved period of the animation.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <defs>
     <mask id="outsynced-flash-mask">
       <image xlink:href="/images/chromatrope/outsynced-flash-mask.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -99,7 +99,7 @@ By moving the position of points out of sync slightly, some interesting cross-rh
 
 This pulsing effect will work on any shape which is regular between the two slides.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <defs>
     <mask id="flashing-line-mask">
       <image xlink:href="/images/chromatrope/flashing-line-mask.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -110,7 +110,7 @@ This pulsing effect will work on any shape which is regular between the two slid
 </svg>
 
 The illusion of continuous motion is produced by radially twisting the two outwardly expanding forms (like the lines above) in the direction that they are spinning.
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <defs>
     <mask id="moving-points-mask">
       <image xlink:href="/images/chromatrope/moving-points-mask.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -126,14 +126,14 @@ The illusion of continuous motion is produced by radially twisting the two outwa
 
 The effect can be reversed by twisting each disc in the opposite direction to their rotation, or simply swapping the discs.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <g class="g1"><circle class="slide-a" cx="0" cy="0" r="200" fill="black" mask="url(#moving-points-mask-b)" /></g>
   <g class="g2"><circle class="slide-b" cx="0" cy="0" r="200" fill="black" mask="url(#moving-points-mask)" /></g>
 </svg>
 
 By extending these lines all the way to the centre, starlike or floral effects are formed.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <defs>
     <mask id="twisted-star-mask">
       <image xlink:href="/images/chromatrope/twisted-star-mask.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -148,7 +148,7 @@ By extending these lines all the way to the centre, starlike or floral effects a
 
 Alternatively, by tapering these lines towards the centre the effect can be made to fade out.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <defs>
     <mask id="tapered-twisted-star-mask">
       <image xlink:href="/images/chromatrope/tapered-twisted-star-mask.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -163,7 +163,7 @@ Alternatively, by tapering these lines towards the centre the effect can be made
 
 Reciprocal (back/forth) motion can be produced simply by painting one slide with a continuous oscillating pattern and the other with a spoke form.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <defs>
     <mask id="inoutaround-mask-a">
       <image xlink:href="/images/chromatrope/inoutaround-mask-a.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -178,7 +178,7 @@ Reciprocal (back/forth) motion can be produced simply by painting one slide with
 
 Again by playing with the frequency of the two forms some interesting cross rhythms are produced.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <defs>
     <mask id="inoutaround-mask-c">
       <image xlink:href="/images/chromatrope/inoutaround-mask-c.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -190,7 +190,7 @@ Again by playing with the frequency of the two forms some interesting cross rhyt
 
 It is possible to produce reciprocal motion with two continuous oscillating lines, but flashes will appear periodically when the two forms align.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="slow">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope slow">
   <defs>
     <mask id="pulsing-star-mask">
       <image xlink:href="/images/chromatrope/pulsing-star-mask.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -205,7 +205,7 @@ It is possible to produce reciprocal motion with two continuous oscillating line
 
 Two slides each with a spoke pattern will create the dynamic bursting effect for which the chromatrope earns the name "artificial firework".
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <defs>
     <mask id="star-mask">
       <image xlink:href="/images/chromatrope/star-mask.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -217,7 +217,7 @@ Two slides each with a spoke pattern will create the dynamic bursting effect for
 
 These can be made more dynamic and explosive by experimenting with the regularity of the two slides.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope">
   <g class="g1"><circle class="slide-a" cx="0" cy="0" r="200" fill="black" mask="url(#star-mask)" /></g>
   <g class="g2"><circle class="slide-b" cx="0" cy="0" r="200" fill="black" mask="url(#inoutaround-mask-c)" /></g>
 </svg>
@@ -228,7 +228,7 @@ These can be made more dynamic and explosive by experimenting with the regularit
 
 Most chromatropes combine many simple features to produce more complex visual effects. This is achieved by dividing the slides into concentric rings. Here are some examples of what can be achieved.
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="slow">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="slow chromatrope">
   <defs>
     <mask id="combine-1-a">
       <image xlink:href="/images/chromatrope/combine-1-a.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -241,7 +241,7 @@ Most chromatropes combine many simple features to produce more complex visual ef
   <g class="g2"><circle class="slide-b" cx="0" cy="0" r="200" fill="black" mask="url(#combine-1-b)" /></g>
 </svg>
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="slow">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope slow">
   <defs>
     <mask id="combine-2-a">
       <image xlink:href="/images/chromatrope/combine-2-a.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -254,7 +254,7 @@ Most chromatropes combine many simple features to produce more complex visual ef
   <g class="g2"><circle class="slide-b" cx="0" cy="0" r="200" fill="black" mask="url(#combine-2-a)" /></g>
 </svg>
 
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="slow">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 950 500" class="chromatrope slow">
   <defs>
     <mask id="combine-3-a">
       <image xlink:href="/images/chromatrope/combine-3-a.jpg"  x="-200" y="-200" width="400px" height="400px" />
@@ -279,19 +279,17 @@ You can read more about chromatropes at [the Museum of Applied Arts & Sciences b
 [^colour]: Readers with an eye for etymology may be wondering why the examples above are colourless. Achromatic chromatropes were made, although they were rare. This post presents the building blocks of chromatropic effects in black and white because they are easier to understand. For some examples of coloured chromatropes see [my other page on this](/research/making-old-media-new/).
 [^lanternamagica]: Mannoni, Laurent, and Donata Pesenti Campagnoni, eds. *Lanterna magica e film dipinto: 400 anni di cinema.* “Il” Castoro, 2010.
 
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
 <script>
-jQuery(window).scroll(function(){
-   $("svg").each(function() {
-        var topofDiv = $(this).offset().top; //gets offset of header
-        var height = $(this).outerHeight(); //gets height of header
+window.addEventListener("scroll", function(){
 
-    if($(window).scrollTop() > (topofDiv - 200))
-       $(this).addClass("pass");
+  for(let svg of document.querySelectorAll("svg.chromatrope")) {
+    const bb = svg.getBoundingClientRect();
+
+    if(bb.top < window.innerHeight/2)
+      svg.classList.add("pass");
     else
-       $(this).removeClass("pass");
-   });
+      svg.classList.remove("pass");
+  }
 
 });
 </script>

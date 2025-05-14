@@ -82,6 +82,7 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --gutter: 20px;
   }
 }
 @layer base {
@@ -304,6 +305,9 @@
   .col-start-2 {
     grid-column-start: 2;
   }
+  .mx-\(--gutter\) {
+    margin-inline: var(--gutter);
+  }
   .mx-\[20px\] {
     margin-inline: 20px;
   }
@@ -469,6 +473,9 @@
   .justify-between {
     justify-content: space-between;
   }
+  .gap-\(--gutter\) {
+    gap: var(--gutter);
+  }
   .gap-\[20px\] {
     gap: 20px;
   }
@@ -596,6 +603,10 @@
   .leading-\[1\.5rem\] {
     --tw-leading: 1.5rem;
     line-height: 1.5rem;
+  }
+  .leading-\[1em\] {
+    --tw-leading: 1em;
+    line-height: 1em;
   }
   .leading-\[2\.0rem\] {
     --tw-leading: 2.0rem;

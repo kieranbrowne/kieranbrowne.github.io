@@ -17,7 +17,7 @@
     <canvas id="bg"></canvas>
     <style>#bg { position: fixed; z-index: -1; }</style>
 
-    <div class="flex flex-wrap justify-between sm:grid grid-cols-8 gap-[20px] mx-[20px]" style="">
+    <div class="flex flex-wrap justify-between sm:grid grid-cols-8 gap-(--gutter) mx-(--gutter)">
       <div class="flex-none w-full col-span-8 mt-[17px]">
         <a href="/"><svg class="fill-gray-800 stroke-gray-800 hover:fill-transparent stroke-[.8px]" width="30" height="20" viewBox="0 0 30 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.04492 20V13.6426L6.05469 10.9492L10.0605 20H13.8066L8.37891 8.40625L13.6152 0.859375H9.97852L3.97656 9.70508L3.7168 9.60938C3.96289 8.40625 4.04492 7.38086 4.04492 5.87695V0.859375H0.654297V20H4.04492ZM23.1172 20C27.082 20 29.1465 18.168 29.1465 14.6543V14.5996C29.1465 11.9746 27.8203 10.3887 25.291 9.96484V9.69141C27.4102 9.26758 28.5176 7.8457 28.5176 5.57617V5.52148C28.5176 2.45898 26.6172 0.859375 22.9258 0.859375H15.748V20H23.1172ZM19.1387 3.52539H22.3105C24.2246 3.52539 25.1406 4.33203 25.1406 6.06836V6.13672C25.1406 7.92773 24.2246 8.77539 22.3105 8.77539H19.1387V3.52539ZM19.1387 11.0586H22.4336C24.5527 11.0586 25.5645 12.0703 25.5645 14.1484V14.2168C25.5645 16.3223 24.5527 17.3203 22.4336 17.3203H19.1387V11.0586Z"></path></svg></a>
       </div>
@@ -30,7 +30,7 @@
     </div>
 
       <div class="page fade-enter-done">
-        <div class="grid grid-cols-8 gap-[20px] mx-[20px] mt-[30px]">
+        <div id="page_content" class="grid grid-cols-8 gap-(--gutter) mx-(--gutter) mt-[30px]">
           {{content}}
         </div>
       </div>

@@ -21,7 +21,7 @@ layout: default
   <iframe src="{{block.src}}" class="w-full h-full inset-0 absolute" />
 </div>
 {% elsif block.type == "gallery" %}
-<div class="col-span-8 sm:col-span-6 sm:col-start-2 grid grid-cols-6 gap-gutter">
+<div class="col-span-8 sm:col-span-6 sm:col-start-2 grid grid-cols-6 gap-(--gutter)">
   {% for image in block.images %}
   <div class="col-span-8 md:col-span-2 {{block.extra_classes}}" style="{{block.extra_styles}}">
     <img src="{{image}}" class="cursor-zoom-in" />

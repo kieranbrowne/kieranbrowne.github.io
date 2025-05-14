@@ -95,3 +95,62 @@ function resize() {
 }
 window.addEventListener("resize", resize);
 resize();
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+document.addEventListener('click', async function(event) {
+  const target = findA(event.target);
+
+  if(!target) return;
+
+  event.preventDefault();
+
+  const href = target.getAttribute('href');
+  const url = URL.parse(href, window.location.origin);
+
+  // if linking outside simply redirect and early return
+  if(url.origin !== window.location.origin) {
+    window.location.href = href;
+    return;
+  }
+
+  try {
+    const response = await fetch(href);
+    if(!response.status === 200) throw Error("Bad response");
+
+    const body = await response.text();
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(body, "text/html");
+    const newContent = doc.getElementById("page_content");
+
+    if(!newContent) throw Error("No new page content");
+
+    newContent.style.opacity = "0";
+
+    let currentContent = document.getElementById("page_content");
+    currentContent.style.transition = "opacity .5s ease";
+    currentContent.style.opacity = "0";
+    await sleep(500);
+    currentContent.innerHTML = newContent.innerHTML;
+    await sleep(100);
+    document.getElementById("page_content").style.transitionDuration = "2000ms";
+    document.getElementById("page_content").style.opacity = "1";
+    history.pushState({}, "", href);
+
+
+  } catch(e) {
+    console.error(e);
+    window.location.href = href;
+  }
+});
+
+function findA(el) {
+    while (el.parentNode) {
+        if (el.tagName === "A"  && el.hasAttribute('href'))
+            return el;
+        el = el.parentNode;
+    }
+    return null;
+}
