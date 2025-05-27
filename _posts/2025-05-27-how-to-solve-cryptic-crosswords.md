@@ -208,7 +208,7 @@ On the surface this clue seems to require some relatively niche knowledge of Lou
 
   If you want to read futher I can highly recommend David Astle's book *Rewording the Brain* which goes into much greater detail about the rules and methods for solving cryptics. But, I'd humbly recommend that you simply try to apply what you've learned by solving some cryptics yourself. The point of any game, after all, is to play. And the best way to get better at anything is to practice.
 
-  As mentioned at the top, I've built a little website to publish some crosswords I wrote in 2023. The site is live at <https://cruxcrosswords.com> and publishes a new cryptic every Sunday (until I run out). The website has no ads, analytics and I have no plans to monetise it; it's a gift! Check it out if cryptic crosswords are your thing.
+  As mentioned at the top, I've built a little website to publish some crosswords I wrote in 2023. The site is live at [https://cruxcrosswords.com](https://cruxcrosswords.com/weekly/1) and publishes a new cryptic every Sunday (until I run out). The website has no ads or analytics and I have no plans to monetise it; it's a gift! Check it out if cryptic crosswords are your thing.
 
 
 <style>
